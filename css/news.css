@@ -1,0 +1,184 @@
+.headerBg{
+    background: url(../img/champion.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.newsContainerText{
+    margin: 9em 0 0 6em;
+}
+.newsContainerText .h1, .news .h2, .contactUs .h1 {
+    font-family: var(--TitleFontStyle);
+    letter-spacing: 3px;
+    position: relative; 
+}
+.newsContainerText .h1::after, .news .h2::after, .contactUs .h1::after{
+    content: '';
+    width: 5.1em;
+    height: 4px;
+    background-color: var(--mainColor);
+    position: absolute;
+    left: 0;
+    bottom: -0.2em;
+}
+.newsContainerText .p{
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    line-height: 29px;
+}
+.newsContainerText button{
+    background-color: var(--mainColor);
+    letter-spacing: 2px;
+    font-family: var(--TitleFontStyle);
+}
+/* News  */
+.liveOne{
+    background: url(../img/blckVsEcho.jpg);
+}
+.liveTwo{
+    background: url(../img/tundraVsteamSecrect.jpg);
+}
+.newsContainer .liveContainer{
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid var(--mainColor);
+    
+}
+.newsContainer .liveContainer button{
+    float: right;
+    background-color: var(--mainColor);
+    border-radius: 0;
+    width: 160px;
+    letter-spacing: 2px;
+}
+.newsContainer .newsLiveTextContainer .h3{
+    font-family: var(--TitleFontStyle);
+    letter-spacing: 3px;
+    color: var(--mainColor);
+}
+.newsContainer .newsLiveTextContainer .p{
+    opacity: 0.8;
+    font-size: 0.9;
+    line-height: 35px;
+}
+.newsContainer .newsLiveTextContainer button{
+    background-color: var(--mainColor);
+    width: 160px;
+    padding: 0.6em 0 0.6em 0;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+.newsContainer .newsLiveTextContainer button:hover{
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+}
+.buttonGp button{
+    background-color: var(--navBgAndBoxes);
+    width: 120px;
+    letter-spacing: 2px;
+    padding: 0.6em 0 0.6em 0;
+}
+.currentBtn{
+    background-color: var(--mainColor) !important;
+}
+.miniNewsContainer .imageContainer{
+    width: 100%;
+    height: 80%;
+}
+.miniNewsContainer .imageContainer img{
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.miniNewsContainer .imageContainer img:hover{
+    opacity: 0.6;
+}
+.miniNewsContainer .textContainer h5{
+    font-family: var(--TitleFontStyle);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.miniNewsContainer .textContainer h5:hover{
+    color: var(--mainColor);
+}
+.miniNewsContainer .textContainer p{
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+/* ContactUs  */
+
+.contactUs .h1::after{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 4em;
+}
+.contactUs .contactContainer{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+}
+.contactUs .contactContainer img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.contactUs .contactContainer .contactBox{
+    width: 60%;
+    background-color: var(--navBgAndBoxes);
+    box-shadow: var(--contactTestiBox);
+    position: absolute;
+    top: 5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.rightBox .inputBox input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--mainColor);
+    color: var(--textColor);
+    font-size: 0.9em;
+    width: 85%;
+}
+
+.rightBox .msgBox textarea{
+    width: 85%;
+    padding: 0.5em;
+    height: 150px;
+    padding: 0.4em;
+    font-size: 0.9em;
+    color: var(--textColor);
+    background-color: var(--navBgAndBoxes);
+    border:var(--customerBoxBorderActive);
+    box-shadow: var(--boxShadow);
+}
+.rightBox .uploadBtn button{
+    width: 150px;
+    letter-spacing: 3px;
+    background-color: var(--mainColor);
+    transition: all 0.6s;
+}
+.rightBox .uploadBtn button:hover{
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+}
+.rightBox .inputBox .h6, .rightBox .msgBox .h6{
+    font-family: var(--TitleFontStyle);
+}
+@media screen and (max-width:1040px) {
+    .contactUs .contactContainer .contactBox{
+        width: 80%;
+    }
+}

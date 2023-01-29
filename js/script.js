@@ -1,3 +1,4 @@
+let gamesArray, gameDisplayArray, sellProductsArray;
 const testiArray = [
     {customerImage : "../img/cus1.jpg", customerName : "The Rock", CustomerLocation : "New York", rating : "4.5", message : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."},
     {customerImage : "../img/cus2.jpg", customerName : "Mira Jean", CustomerLocation : "Washinton, UK", rating : "5.5", message : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."},
@@ -62,10 +63,66 @@ $(document).ready(function() {
         $(`.${concatClassVideo}`)[0].pause();
       });
 
+      filterItems("miniNews", "buttonGp");
+      slide();
     preparingCustomerReviews();
+
+    choosePaymentCard();
+    confirmBuy();
 
 })
 
+
+function slide() {
+    let count = 0;
+    const slideChooseImg = document.getElementsByClassName("slideChooseImg");
+    $("#slideNext").click(function () {
+      slideChooseImg[count].classList.remove("imgActive");
+      slideChooseImg[++count].classList.add("imgActive");
+    });
+    $("#slidePrev").click(function () {
+      slideChooseImg[count].classList.remove("imgActive");
+      slideChooseImg[--count].classList.add("imgActive");
+    });
+  }
+  function choosePaymentCard(){
+    const card = document.getElementsByClassName("card");
+    for(let i=0; i< card.length; i++){
+      card[i].addEventListener("click",()=>{
+        for(let j=0; j< card.length; j++){
+          card[j].classList.remove("cardActive");
+        }
+        card[i].classList.add("cardActive");
+      })
+    }
+  }
+  function confirmBuy() {
+    $(".buyBtnModal button").click(function() {
+  
+      if($(".left input").val() == '' || $(".right input").val() == '') {
+          alert("you need to fll the all information first");
+          // return;
+       }else{
+        $(".buyBtnModal button").attr('data-bs-toggle','modal');
+   
+       }
+  
+    })
+  }
+  function localStorageForGame() {
+    $(".buyImg").attr('src',`${localStorage.getItem('img')}`);
+    $("#slideImage1").attr('src',`${localStorage.getItem('img1')}`);
+    $("#slideImage2").attr('src',`${localStorage.getItem('img2')}`);
+    $("#slideImage3").attr('src',`${localStorage.getItem('img3')}`);
+    $("#slideChooseImg1").attr('src',`${localStorage.getItem('img1')}`);
+    $("#slideChooseImg2").attr('src',`${localStorage.getItem('img2')}`);
+    $("#slideChooseImg3").attr('src',`${localStorage.getItem('img3')}`);
+    $(".gameNaming").text(`${localStorage.getItem('name')}`);
+    $(".payPrice").text(`${localStorage.getItem('price')}`);
+  
+    
+  }
+    
 
 function filterItems(con, typeBtn) {
     var $grid = $(`.${con}`).isotope({
@@ -150,7 +207,7 @@ function filterItems(con, typeBtn) {
   }
   
 window.addEventListener("load",()=> {
-
+localStorageForGame();
     let changeJsonCusArray = JSON.parse(localStorage.getItem('customersArray'));
     if(changeJsonCusArray == null){
       return;
