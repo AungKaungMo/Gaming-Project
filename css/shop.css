@@ -30,9 +30,11 @@
     position: relative;
 }
 .favList .favListCount, .shopList .shopListCount{
-    /* width: 30px; */
-    text-align: center;
-    padding: 0.4em;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
     background-color: var(--buyColor);

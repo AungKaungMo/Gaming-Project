@@ -3,8 +3,6 @@ let localObjForFav = {};
 let localArrayForBought = [];
 let localObjForBought = {};
 $(document).ready(function() {
-   
-   
     $('.addingFavList').click(function() {
         addingDivToContainer("listBox",localObjForFav, localArrayForFav);
          localStorage.setItem('localArrayForFav', JSON.stringify(localArrayForFav));
