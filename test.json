@@ -1,0 +1,136 @@
+{
+  "uuid": "88dad87f-e113-4120-a00c-2d895184c613",
+  "lastMigration": 24,
+  "name": "Test",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "ef79ef8f-7e0c-4ccb-85c8-02493577ac96",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "gameDetails",
+      "responses": [
+        {
+          "uuid": "fb8e0c57-ca9a-4c86-b900-85a20026c36f",
+          "body": "[\n  {\n    \"gameImage\": \"../img/godofwar.jpg\",\n    \"gameType\": \"ps4\",\n    \"gameName\": \"God Of War\",\n    \"popular\": \"3M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 50.3\"\n  },\n  {\n    \"gameImage\": \"../img/apexLegend.jpg\",\n    \"gameType\": \"pc\",\n    \"gameName\": \"Apex Legend\",\n    \"popular\": \"5M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 60.2\"\n  },\n  {\n    \"gameImage\": \"../img/Bloodborne.jpg\",\n    \"gameType\": \"ps4\",\n    \"gameName\": \"Blood Borne\",\n    \"popular\": \"3M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 90.3\"\n  },\n  {\n    \"gameImage\": \"../img/ClashRoyale.jpg\",\n    \"gameType\": \"mobile\",\n    \"gameName\": \"Clash Royale\",\n    \"popular\": \"11M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 20.22\"\n  },\n  {\n    \"gameImage\": \"../img/Cod.jpg\",\n    \"gameName\": \"Call Of Duty\",\n    \"gameType\": \"ps4\",\n    \"popular\": \"6M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 30.3\"\n  },\n  {\n    \"gameImage\": \"../img/fortnite.jpg\",\n    \"gameType\": \"pc\",\n    \"gameName\": \"Fortnite\",\n    \"popular\": \"12M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"gameImage\": \"../img/halfLife.jpg\",\n    \"gameType\": \"vr\",\n    \"gameName\": \"Half Life\",\n    \"popular\": \"7M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 30.21\"\n  },\n  {\n    \"gameImage\": \"../img/mineCraft.jpg\",\n    \"gameType\": \"vr\",\n    \"gameName\": \"Mine Craft\",\n    \"popular\": \"30M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 210.3\"\n  },\n  {\n    \"gameImage\": \"../img/ml.jpg\",\n    \"gameType\": \"mobile\",\n    \"gameName\": \"Mobile Legend\",\n    \"popular\": \"50M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 5.0\"\n  },\n  {\n    \"gameImage\": \"../img/noManSky.jpg\",\n    \"gameType\": \"vr\",\n    \"gameName\": \"No Man Sky\",\n    \"popular\": \"13M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 320.3\"\n  },\n  {\n    \"gameImage\": \"../img/PersonaRoyal.jpg\",\n    \"gameType\": \"ps4\",\n    \"gameName\": \"Person5 Royal\",\n    \"popular\": \"11M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 210.22\"\n  },\n  {\n    \"gameImage\": \"../img/pokemon.jpg\",\n    \"gameType\": \"mobile\",\n    \"gameName\": \"Pokemon Go\",\n    \"popular\": \"36M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 30.3\"\n  },\n  {\n    \"gameImage\": \"../img/RAIDShadowLegends.jpg\",\n    \"gameType\": \"mobile\",\n    \"gameName\": \"Raid Shadow\",\n    \"popular\": \"12M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"gameImage\": \"../img/RecRoom.png\",\n    \"gameType\": \"vr\",\n    \"gameName\": \"Rec Room\",\n    \"popular\": \"17M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 300.21\"\n  },\n  {\n    \"gameImage\": \"../img/TheWitcherWild Hunt.jpg\",\n    \"gameType\": \"ps4\",\n    \"gameName\": \"The Witcher\",\n    \"popular\": \"32M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"gameImage\": \"../img/valorant.jpg\",\n    \"gameType\": \"pc\",\n    \"gameName\": \"Valorant\",\n    \"popular\": \"71M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 600.21\"\n  },\n  {\n    \"gameImage\": \"../img/walkingDead.jpg\",\n    \"gameType\": \"mobile\",\n    \"gameName\": \"Walking Dead\",\n    \"popular\": \"30M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 210.3\"\n  },\n  {\n    \"gameImage\": \"../img/pubg.jpg\",\n    \"gameType\": \"mobile\",\n    \"gameName\": \"PUBG\",\n    \"popular\": \"50M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 5.0\"\n  },\n  {\n    \"gameImage\": \"../img/GTA.jpg\",\n    \"gameType\": \"pc\",\n    \"gameName\": \"GTA\",\n    \"popular\": \"12M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 100.11\"\n  },\n  {\n    \"gameImage\": \"../img/gshin.jpg\",\n    \"gameType\": \"pc\",\n    \"gameName\": \"Genshin\",\n    \"popular\": \"21M\",\n    \"gameDetails\": \"One of the best ranking game in 1023.\",\n    \"price\": \"$ 53.11\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": " (copy)",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "cc2c59b9-a940-41f0-9f5d-da74ee934270",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "gameBuyDetails",
+      "responses": [
+        {
+          "uuid": "d2475fac-0da2-4db0-8fdb-327c0903ef7f",
+          "body": "[\n  {\n    \"img\": \"../img/godofwar.jpg\",\n    \"img1\": \"../img/gow1.jpg\",\n    \"img2\": \"../img/gow2.jpg\",\n    \"img3\": \"../img/gow3.jpg\",\n    \"name\": \"God Of War\",\n    \"price\": \"$ 50.3\"\n  },\n  {\n    \"img\": \"../img/apexLegend.jpg\",\n    \"img1\": \"../img/apl1.jpg\",\n    \"img2\": \"../img/apl2.jpg\",\n    \"img3\": \"../img/apl3.jpg\",\n    \"name\": \"Apex Legend\",\n    \"price\": \"$ 60.2\"\n  },\n  {\n    \"img\": \"../img/Bloodborne.jpg\",\n    \"img1\": \"../img/bb1.jpg\",\n    \"img2\": \"../img/bb2.jpg\",\n    \"img3\": \"../img/bb3.jpg\",\n    \"name\": \"Blood Borne\",\n    \"price\": \"$ 90.3\"\n  },\n  {\n    \"img\": \"../img/ClashRoyale.jpg\",\n    \"img1\": \"../img/cr1.jpg\",\n    \"img2\": \"../img/cr2.jpg\",\n    \"img3\": \"../img/cr3.jpg\",\n    \"name\": \"Clash Royale\",\n    \"price\": \"$ 20.22\"\n  },\n  {\n    \"img\": \"../img/Cod.jpg\",\n    \"img1\": \"../img/cod1.jpg\",\n    \"img2\": \"../img/cod2.jpeg\",\n    \"img3\": \"../img/cod3.jpg\",\n    \"name\": \"Call Of Duty\",\n    \"price\": \"$ 30.3\"\n  },\n  {\n    \"img\": \"../img/fortnite.jpg\",\n    \"img1\": \"../img/fortnite1.jpg\",\n    \"img2\": \"../img/fortnite2.jpg\",\n    \"img3\": \"../img/fortnite3.jpg\",\n    \"name\": \"Fortnite\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"img\": \"../img/halfLife.jpg\",\n    \"img1\": \"../img/HL1.jpg\",\n    \"img2\": \"../img/HL2.jpg\",\n    \"img3\": \"../img/HL3.jpg\",\n    \"name\": \"Half Life\",\n    \"price\": \"$ 30.21\"\n  },\n  {\n    \"img\": \"../img/mineCraft.jpg\",\n    \"img1\": \"../img/mc1.png\",\n    \"img2\": \"../img/mc2.jpg\",\n    \"img3\": \"../img/mc3.jpg\",\n    \"name\": \"Mine Craft\",\n    \"price\": \"$ 210.3\"\n  },\n  {\n    \"img\": \"../img/ml.jpg\",\n    \"img1\": \"../img/ml1.jpg\",\n    \"img2\": \"../img/ml2.jpg\",\n    \"img3\": \"../img/ml3.jpg\",\n    \"name\": \"Mobile Legend\",\n    \"price\": \"$ 5.0\"\n  },\n  {\n    \"img\": \"../img/noManSky.jpg\",\n    \"img1\": \"../img/nms1.jpg\",\n    \"img2\": \"../img/nms2.jpg\",\n    \"img3\": \"../img/nms3.jpg\",\n    \"name\": \"No Man Sky\",\n    \"price\": \"$ 320.3\"\n  },\n  {\n    \"img\": \"../img/PersonaRoyal.jpg\",\n    \"img1\": \"../img/per1.jpg\",\n    \"img2\": \"../img/per2.jpg\",\n    \"img3\": \"../img/per3.jpg\",\n    \"name\": \"Person5 Royal\",\n    \"price\": \"$ 210.22\"\n  },\n  {\n    \"img\": \"../img/pokemon.jpg\",\n    \"img1\": \"../img/pgo1.jpg\",\n    \"img2\": \"../img/pgo2.jpg\",\n    \"img3\": \"../img/pgo3.jpg\",\n    \"name\": \"Pokemon Go\",\n    \"price\": \"$ 30.3\"\n  },\n  {\n    \"img\": \"../img/RAIDShadowLegends.jpg\",\n    \"img1\": \"../img/rs1.jpg\",\n    \"img2\": \"../img/rs2.jpg\",\n    \"img3\": \"../img/rs3.jpg\",\n    \"name\": \"Raid Shadow\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"img\": \"../img/RecRoom.png\",\n    \"img1\": \"../img/rr1.jpg\",\n    \"img2\": \"../img/rr2.jpg\",\n    \"img3\": \"../img/rr3.jpg\",\n    \"name\": \"Rec Room\",\n    \"price\": \"$ 600.21\"\n  },\n  {\n    \"img\": \"../img/TheWitcherWild Hunt.jpg\",\n    \"img1\": \"../img/tw1.jpg\",\n    \"img2\": \"../img/tw2.jpg\",\n    \"img3\": \"../img/tw3.jpg\",\n    \"name\": \"The Witcher\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"img\": \"../img/valorant.jpg\",\n    \"img1\": \"../img/val1.jpg\",\n    \"img2\": \"../img/val2.jpg\",\n    \"img3\": \"../img/val3.jpg\",\n    \"name\": \"Valorant\",\n    \"price\": \"$ 600.21\"\n  },\n  {\n    \"img\": \"../img/walkingDead.jpg\",\n    \"img1\": \"../img/wd1.jpg\",\n    \"img2\": \"../img/wd2.jpg\",\n    \"img3\": \"../img/wd3.jpg\",\n    \"name\": \"Walking Dead\",\n    \"price\": \"$ 210.3\"\n  },\n  {\n    \"img\": \"../img/pubg.jpg\",\n    \"img1\": \"../img/pubg1.jpg\",\n    \"img2\": \"../img/pubg2.jpg\",\n    \"img3\": \"../img/pubg3.jpg\",\n    \"name\": \"PUBG\",\n    \"price\": \"$ 5.0\"\n  },\n  {\n    \"img\": \"../img/GTA.jpg\",\n    \"img1\": \"../img/gta1.jpg\",\n    \"img2\": \"../img/gta2.jpg\",\n    \"img3\": \"../img/gta3.jpg\",\n    \"name\": \"GTA\",\n    \"price\": \"$ 100.11\"\n  },\n  {\n    \"img\": \"../img/gshin.jpg\",\n    \"img1\": \"../img/gshin1.jpeg\",\n    \"img2\": \"../img/gshin2.jpg\",\n    \"img3\": \"../img/gshin3.jpg\",\n    \"name\": \"Genshin\",\n    \"price\": \"$ 53.11\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "80d7c9ca-1eba-4a0c-8765-b889ece7fc42",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "productDetails",
+      "responses": [
+        {
+          "uuid": "ff4b92ff-3f7f-4a90-8f83-ad38a228376f",
+          "body": "[\n  {\n    \"gameImage\": \"../img/1colorKey.png\",\n    \"gameType\": \"keyboard\",\n    \"gameName\": \"One Color Key\",\n    \"popular\": \"3M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 50.3\"\n  },\n  {\n    \"gameImage\": \"../img/chairBlackBlue.png\",\n    \"gameType\": \"chair\",\n    \"gameName\": \"Chair(Black&Blue)\",\n    \"popular\": \"5M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 60.2\"\n  },\n  {\n    \"gameImage\": \"../img/headset(HDJ-1500).png\",\n    \"gameType\": \"headset\",\n    \"gameName\": \"HDJ (1500)\",\n    \"popular\": \"3M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 90.3\"\n  },\n  {\n    \"gameImage\": \"../img/headset(SADES).png\",\n    \"gameType\": \"headset\",\n    \"gameName\": \"SADES\",\n    \"popular\": \"11M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 20.22\"\n  },\n  {\n    \"gameImage\": \"../img/VR(mi).png\",\n    \"gameName\": \"VR(Mi)\",\n    \"gameType\": \"psvr\",\n    \"popular\": \"6M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 30.3\"\n  },\n  {\n    \"gameImage\": \"../img/2colorKey.png\",\n    \"gameType\": \"keyboard\",\n    \"gameName\": \"Two Color Key\",\n    \"popular\": \"12M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"gameImage\": \"../img/chair.png\",\n    \"gameType\": \"chair\",\n    \"gameName\": \"DXR Acer\",\n    \"popular\": \"7M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 30.21\"\n  },\n  {\n    \"gameImage\": \"../img/headset(Studio).png\",\n    \"gameType\": \"headset\",\n    \"gameName\": \"Studio\",\n    \"popular\": \"30M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 210.3\"\n  },\n  {\n    \"gameImage\": \"../img/6colorKey.png\",\n    \"gameType\": \"keyboard\",\n    \"gameName\": \"6 Color Key\",\n    \"popular\": \"50M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 5.0\"\n  },\n  {\n    \"gameImage\": \"../img/chairPink.png\",\n    \"gameType\": \"chair\",\n    \"gameName\": \"Chair(Pink)\",\n    \"popular\": \"13M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 320.3\"\n  },\n  {\n    \"gameImage\": \"../img/ps4.png\",\n    \"gameType\": \"psvr\",\n    \"gameName\": \"PS 4\",\n    \"popular\": \"11M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 210.22\"\n  },\n  {\n    \"gameImage\": \"../img/4colorKey.png\",\n    \"gameType\": \"keyboard\",\n    \"gameName\": \"4 Color Key\",\n    \"popular\": \"36M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 30.3\"\n  },\n  {\n    \"gameImage\": \"../img/headset(S.O.G).png\",\n    \"gameType\": \"headset\",\n    \"gameName\": \"S.O.G\",\n    \"popular\": \"12M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"gameImage\": \"../img/ps5.png\",\n    \"gameType\": \"psvr\",\n    \"gameName\": \"PS 5\",\n    \"popular\": \"17M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 300.21\"\n  },\n  {\n    \"gameImage\": \"../img/chairBlue.png\",\n    \"gameType\": \"chair\",\n    \"gameName\": \"Chair(Blue)\",\n    \"popular\": \"32M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 150.3\"\n  },\n  {\n    \"gameImage\": \"../img/5colorKey.png\",\n    \"gameType\": \"keyboard\",\n    \"gameName\": \"5 Color Key\",\n    \"popular\": \"71M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 600.21\"\n  },\n  {\n    \"gameImage\": \"../img/VR(V+).png\",\n    \"gameType\": \"psvr\",\n    \"gameName\": \"VR(V+)\",\n    \"popular\": \"30M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 210.3\"\n  },\n  {\n    \"gameImage\": \"../img/chairBlackWhite.png\",\n    \"gameType\": \"chair\",\n    \"gameName\": \"Chair(Black&White)\",\n    \"popular\": \"50M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 5.0\"\n  },\n  {\n    \"gameImage\": \"../img/headset(L).png\",\n    \"gameType\": \"headset\",\n    \"gameName\": \"L\",\n    \"popular\": \"12M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 100.11\"\n  },\n  {\n    \"gameImage\": \"../img/3colorKey.png\",\n    \"gameType\": \"keyboard\",\n    \"gameName\": \"3 Color Key\",\n    \"popular\": \"21M\",\n    \"gameDetails\": \"One of the best sell products in 1023.\",\n    \"price\": \"$ 53.11\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
