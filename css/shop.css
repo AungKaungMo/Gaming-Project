@@ -1,0 +1,182 @@
+.top-navbar .icon-back i{
+    transition: all 0.4s;
+}
+.top-navbar .icon-back i:hover{
+    color: var(--gameButton);
+}
+.top-navbar .searchBar input{
+    width: 230px;
+    padding: 0.4em;
+    background-color: var(--navBgAndBoxes);
+    border-radius: 20px;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: var(--boxShadow);
+}
+@media screen and (max-width:390px) {
+    .top-navbar .searchBar input{
+    width: 150px;
+}
+}
+.listBox, .listBox2{
+    background-color: var(--navBgAndBoxes);
+    overflow: auto;
+}
+.top-navbar .iconGP i{
+    font-size: 1.5em;
+    padding: 0.7em;
+}
+.favList, .shopList{
+    position: relative;
+}
+.favList .favListCount, .shopList .shopListCount{
+    /* width: 30px; */
+    text-align: center;
+    padding: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: var(--buyColor);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    font-size: 0.8em;
+    right: 0;
+    cursor: pointer;
+    user-select: none;
+}
+.favListContainer .hrLine{
+    width: 100%;
+    height: 1px;
+    background-color: var(--textColor);
+}
+.navline{
+    width: 100%;
+    height: 1px;
+    box-shadow: var(--boxShadow);
+}
+.favBox .favBoxContainer .image{
+    width: 100px;
+    height: 80px;
+}
+.favBox .favBoxContainer .textContainer p{
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+.favBox .favBoxContainer i{
+    margin-right: 0.5em;
+    transition: all 0.1s;
+}
+.favBox .favBoxContainer i:hover{
+    opacity: 0.5;
+}
+.endShadow{
+    width: 100%;
+    height: 1px;
+    box-shadow: var(--boxShadow);
+}
+.gameTitle{
+    letter-spacing: 3px;
+}
+.row > * {
+    padding: 0 !important;
+}
+.gameDetails .h4{
+    position: relative;
+}
+.gameDetails .h4::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--mainColor);
+}
+.imageContainer{
+    user-select: none;
+}
+.imageContainer .slideImg{
+    width: 100%;
+    height: 60vh;
+}
+.imageContainer .slideChooseImg{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width:425px) {
+    .imageContainer .slideChooseImg{
+        width: 65px;
+        height: 65px;
+    }
+}
+.imageContainer .chooseImg img{
+    border-radius: 20px;
+}
+.imgActive{
+    border: 3px solid blue;
+}
+.imageContainer .chooseImg i:active{
+    color: var(--navBgAndBoxes);
+}
+.featureAndGenres p:first-child{
+    color: var(--gameButton);
+}
+.featureAndGenres .verticalLine{
+    position: relative;
+}
+.featureAndGenres .verticalLine .vLine{
+    width: 2px;
+    height: 110px;
+    background-color: var(--gameButton);
+    position: absolute;
+    top: 0;
+}
+.aboutStory .aboutTitle, .follow{
+    letter-spacing: 2px;
+}
+.aboutTitle + .p{
+    font-size: 0.8em;
+    opacity: 0.6;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.followIcons{
+    width: 80%;
+    padding: 1em;
+    background-color: var(--navBgAndBoxes);
+}
+.followIcons i{
+    font-size: 2em;
+    transition: all 0.4s;
+}
+.followIcons i:hover{
+    color: var(--mainColor);
+}
+.btnGp button{
+    width: 240px;
+    background-color: #0074E4;
+}
+.req .h4::after{
+    width: 120px;
+}
+.windowGp {
+    font-size: 1em;
+}
+.windowGp .p i{
+    opacity: 0.5;
+}
+.horizontalLine{
+    width: 100%;
+    height: 1px;
+    box-shadow: var(--boxShadow);
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+}
+.swiper-button-next, .swiper-button-prev{
+    position: unset;
+    display: unset;
+    color: unset;
+    height: unset;
+    width: unset;
+}
