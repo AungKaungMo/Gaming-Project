@@ -1,0 +1,413 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.swiperContainer .h1{
+    letter-spacing: 4px;
+    padding-top: 4.5em;
+}
+.swiperContainer .p{
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+#playNow, .sectionContainer .sectionBtn button{
+    background-color: var(--mainColor);
+    letter-spacing: 3px;
+    width: 200px;
+    transition: all 0.5s;  
+}
+#playNow:hover, .sectionContainer .sectionBtn button:hover{
+    background-color: transparent;
+    border: 1px solid var(--hoverEff);
+}
+.mySwiper{
+    width: 100%;
+    height: 87vh ;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
+}
+.sone{
+    background: url(../img/d.jpg);
+}
+.stwo{
+    background: url(../img/Cod.jpg);
+}
+.sthree{
+    background: url(../img/fort.jpg);
+
+}
+.swiperContainer{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.swiper-button-prev i, .swiper-button-next i{
+    font-size: 2em;
+    color: var(--mainColor);
+}
+
+ /* Trending */
+
+.trendingContainer .h1, .aboutTitle .h2, .whyUs .h2, .testi .h2, .userTesti .h2, .addUserTestiContainer .profile .h5, .addUserTestiContainer .h5{
+    letter-spacing: 4px;
+    position: relative; 
+}
+.trendingContainer .h1::after, .aboutTitle .h2::after, .whyUs .h2::after, .testi .h2::after, .userTesti .h2::after, .addUserTestiContainer .profile .h5::after, .addUserTestiContainer .h5::after{
+    content: '';
+    width: 7.5em;
+    height: 3px;
+    background-color: var(--mainColor);
+    position: absolute;
+    left: 0;
+    bottom: -0.5em;
+}
+.trendingContainer .h6{
+    font-size: 1.3em;
+}
+.trendingContainer .title{
+    display: flex;
+    justify-content: space-between;
+}
+.trendingContainer .title .p{
+    color: var(--mainColor);
+    font-size: 0.9em;
+}
+.trendingContainer .gameImage img{
+    border-radius: 20px;
+    box-shadow: var(--imgBoxShadow);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.trendingContainer .gameImage img:hover{
+    opacity: 0.6;
+}
+.gameContainer .gameImage{
+    border-radius: 20px;
+    background-color: var(--navBgAndBoxes);
+    width: 220px;
+    height: 170px;
+}
+.gameContainer .gameImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gameContainer .pText{
+    font-size: 0.8em !important;
+}
+.trendingContainer .trendingTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.trendingContainer .trendingTitle .seeAll{
+    color: var(--mainColor) !important;
+    cursor: pointer;
+}
+.swiper-wrapper-two{
+    height: 52vh;
+}
+.swiper-pagination{
+  bottom: 0;
+}
+.swiper-pagination-bullet{
+    background-color: var(--textColor) !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--mainColor) !important;
+}
+
+    /* SECTION */
+.sectionContainer{
+    margin-top: 7em;
+    padding-top: 11em;
+    background: url(../img/sectionImg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sectionContainer h1{
+    letter-spacing: 4px;
+    color: var(--mainColor);
+}
+.sectionContainer .p{
+    font-size: 1.1em;
+    letter-spacing: 4px;
+    line-height: 25px;
+}
+    /* ABOUT US */
+.aboutTitle .h2::after{
+    width: 150px;
+    bottom: -3px;
+}
+.leftAboutUs .p{
+    width: 500px;
+    font-size: 1em;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+.readMore button{
+    width: 150px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    background-color: var(--mainColor);
+}
+.aboutTitle .aboutImg{
+    box-shadow: var(--imgBoxShadow);
+}
+@media screen and (max-width:990px) {
+    .leftAboutUs .p{
+        width: 300px;
+    }
+}
+@media screen and (max-width:730px) {
+    .leftAboutUs .p{
+        width: auto;
+        letter-spacing: 1px;
+    }
+}
+
+        /* WHY US */
+
+.whyUs{
+    margin-top: 7em;
+}
+.whyUs .h2::after, .testi .h2::after, .userTesti .h2::after{
+    width: 150px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+    bottom: -9px;
+}
+.whyUs .row{
+    margin-top: 7em;
+}
+.whyUs .row .card{
+    background-color: var(--navBgAndBoxes);
+    box-shadow: var(--imgBoxShadow);
+    color: var(--textColor) !important;
+}
+.serviceCard{
+    position: relative;
+}
+.serviceCard .serviceIcons{
+    position: absolute;
+    font-size: 2.5em;
+    left: 0;
+    right: 0;
+    top: -20px;
+}
+.whyUs .row .card .card-title{
+    margin-top: 2.2em;
+    margin-bottom: 0.5em;
+    color: var(--mainColor);
+}
+.whyUs .row .card .card-text{
+    font-size: 1em;
+    margin-top: 1.8em ;
+    opacity: 0.7;
+}
+@media screen and (max-width:870px) {
+    .service{
+        width: 40%;
+    }
+}
+@media screen and (max-width:630px) {
+    .service{
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    .service .card{
+        margin: 0 auto;
+    }
+}
+ /* Testimonial */
+
+.testi{
+    background-color: var(--navBgAndBoxes);
+    min-height: 90vh;
+}
+.customerContainer{
+    width: 350px;
+    min-height: 250px;
+    background-color: var(--navBgAndBoxes);
+    border-radius: 15px;
+    transition: all 0.6s;
+    border: var(--customerBoxBorder);
+    cursor: pointer;
+}
+.customerContainer:hover{   
+    border: var(--customerBoxBorderActive);
+}
+.customerContainer .topHeaderCusDetails{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.customerContainer .topHeaderCusDetails .imgCus{
+    display: flex;
+}
+.customerImageContainer{
+    width: 80px;
+    height: 80px;
+}
+.customerImageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.customerContainer .topHeaderCusDetails .nameAndLocation{
+    margin-top: 0.6em;
+    margin-left: 0.6em;
+}
+.customerContainer .topHeaderCusDetails .nameAndLocation span{
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.customerContainer .topHeaderCusDetails .nameAndLocation .location{
+    font-size: 0.8em;
+    opacity: 0.7;
+    font-weight: bold;
+}
+.customerContainer .topHeaderCusDetails .rate{
+    font-size: 0.8em;
+}
+.customerContainer .topHeaderCusDetails .rate i{
+    margin-left: 0.5em;
+    color: var(--mainColor) !important;
+}
+.reviewDetails .p{
+    margin-left: 1.5em;
+    margin-right: 1em;
+    font-size: 0.9em;
+    line-height: 24px;
+}
+.testi .mySwiperThree{
+    margin-top: 7em;
+    overflow: unset !important;
+}
+.customerActiveBtn{
+    bottom: -50px !important;
+    width: unset !important;
+}
+
+.testi .customerActiveBtn .swiper-pagination-bullet-active{
+    width: 30px !important;
+    height: 10px !important;
+    border-radius: 20px !important;
+}
+.customerActiveBtn .swiper-pagination-bullet{
+    transition: all 0.4s;
+}
+.testi .mySwiperThree .swiper-button-next, .testi .mySwiperThree .swiper-button-prev{
+    display: unset !important;
+    position: unset !important;
+    float: right;
+    margin-top: 1.5em !important;
+    margin-right: 4em !important;
+}
+
+.testi .mySwiperThree .swiper-button-next i, .testi .mySwiperThree .swiper-button-prev i{
+    padding: 0.3em;
+    font-size: 1.8em;
+    border: 1px solid var(--mainColor);
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+.testi .mySwiperThree .swiper-button-next i:hover, .testi .mySwiperThree .swiper-button-prev i:hover{
+    background-color: var(--hoverEff);
+    color: var(--textColor);
+}
+@media screen and (max-width:410px) {
+    .testi .mySwiperThree .swiper-button-next, .testi .mySwiperThree .swiper-button-prev{
+        margin-right: 2.5em !important;
+    }
+}
+ /* Adding testimonial */
+ .addUserTestiContainer .profile .h5{
+    letter-spacing: 2px ;
+ }
+ .userTesti .h2::after{
+    width: 200px;
+ }
+ .addUserTestiContainer{
+    width: 65%;
+    background-color: var(--navBgAndBoxes);
+    box-shadow: var(--contactTestiBox);
+    border-radius: 15px;
+ }
+ .cusImgUploadContainer {
+    width: 90px;
+    height: 90px;
+ }
+ .cusImgUploadContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(156, 156, 156);
+ }
+
+.addUserTestiContainer .inputBox input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--mainColor);
+    color: var(--textColor);
+    font-size: 0.9em;
+}
+.addUserTestiContainer .msgBox .h5{
+    letter-spacing: 2px;
+}
+.addUserTestiContainer .msgBox .h5::after{
+    width: 120px;
+}
+.addUserTestiContainer .msgBox textarea{
+    width: 90%;
+    padding: 0.5em;
+    height: 200px;
+    padding: 0.4em;
+    font-size: 0.9em;
+    color: var(--textColor);
+    background-color: var(--navBgAndBoxes);
+    border:var(--customerBoxBorderActive);
+    box-shadow: var(--boxShadow);
+}
+.addUserTestiContainer .uploadBtn button{
+    width: 150px;
+    letter-spacing: 3px;
+    background-color: var(--mainColor);
+    transition: all 0.6s;
+}
+.addUserTestiContainer .uploadBtn button:hover{
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+}
+ @media screen and (max-width:995px) {
+    .addUserTestiContainer{
+        width: 90%;
+    }
+}
+@media screen and (max-width:575px) {
+    .rowColRes{
+        margin-left: 7%;
+    }
+    .addUserTestiContainer .inputBox input{
+        width: 80%;
+    }
+    .addUserTestiContainer .msgBox textarea{
+        width: 80%;
+    }
+
+}

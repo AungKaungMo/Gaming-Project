@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+
+      <!---------------------    GOOGLE FONTS   ----------------------------------->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Kaisei+Tokumin:wght@500&family=Newsreader:opsz@6..72&family=Poppins:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+      <!----------------------  FONT AWESOME  ------------------------------------->
+      <script src="https://kit.fontawesome.com/de471be2d6.js" crossorigin="anonymous"></script>
+
+      <!------------------------  BOOTSTRAP  --------------------------------------------->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+       <!-- Link Swiper's CSS -->
+       <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+     />
+      <!--------------------------  CSS  ------------------------------------------>
+      <link rel="stylesheet" href="../css/root.css">
+      <link rel="stylesheet" href="../css/homeAndAbout.css">
+
+      <!---------------------------  JQUERY  ------------------------------------------->
+      <script src="../Jquery/jquery3.6.0.js"></script>
+        <!----------------------   ISOTOPE FILTERING  -------------------------------------->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+  <!---------------------------  JavaScript  --------------------------------------------->
+      <script src="../js/script.js"></script>
+      <script src="../js/search.js"></script>
+    <script src="../js/coustmer.js"></script>
+    
+</head>
+    <!---------------------  HEADER  ----------------------------->
+<body class="bg-black text-light"> 
+    <div class="container-fluid px-0 py-0 ">
+        <div class="text-light resBar">
+            <i class="fa-solid fa-xmark" id="close"></i>
+            <div class="navContainer">
+                <i class="fa-solid fa-house fs-5"></i>
+                <span><a href="../html/homeAndAbout.html" class="fs-6 resNavActive">HOME</a></span>
+            </div>
+            <div class="navContainer">
+                <i class="fa-solid fa-circle-info mt-5 fs-5"></i>
+                <span><a href="#About" class="fs-6">ABOUT</a></span>
+            </div>
+            <div class="navContainer">
+                <i class="fa-solid fa-newspaper mt-5 fs-5"></i>
+                <span><a href="../html/news.html" class="fs-6 news">NEWS</a></span>
+            </div>
+            <div class="navContainer">
+                <i class="fa-solid fa-gamepad mt-5 fs-5"></i>
+                <span><a href="../html/games.html" class="fs-6">GAMES</a></span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md bg-body-tertiary navBar" >
+            <div class="container-fluid">
+              <a class="navbar-brand ms-3" href="#">
+                <img src="../img/logo.png" width="60px" height="60px">
+              </a>
+         
+                <ul class="navbar-nav m-auto middleNavBar">
+                  <li class="nav-item">
+                    <a class="nav-link navActive" href="../html/homeAndAbout.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#About">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="../html/games.html">GAMES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/news.html">NEWS</a>
+                  </li>
+                </ul>
+
+                <ul class="m-auto middleNavBarChange">
+                    <i class="fa-solid fa-bars fs-3 text-light" id="slideBtn"></i>
+                </ul>
+                <form class="d-flex me-3" role="search">
+
+                    <i class="fa-sharp fa-solid fa-magnifying-glass text-light" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> /
+                    <!-- <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;" aria-modal="true" role="dialog"> -->
+                      <div class="modal-dialog" style="margin: 0 auto !important; margin-top: 1.8em !important;">
+                        <div class="modal-content" style="background-color: var(--opaColor); border: unset; border-bottom-left-radius: 0;border-bottom: 1px solid rgb(48, 48, 48); border-bottom-right-radius: 0;">
+                          <div class="modal-header">
+                            <div class="modal-title fs-5" id="exampleModalLabel">
+                              <input type="text" id="searchInput">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div id="searchItemsContainer"></div>
+
+                    </div>
+                          <i class="fa-solid fa-user text-light ms-3"></i>
+                </form>
+              </div>
+            
+          </nav>
+
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiperContainer sone text-center">
+                    <div class="h1">DOTA 2</div>
+                    <div class="p mt-5 fw-bold ">Dota is the one of the best game in the world<br>
+                        and it is very good to play with team.</div>
+                    <div class="">
+                        <button class="btn text-light mt-5" id="playNow">PLAY NOW</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiperContainer stwo text-center">
+                    <div class="h1">CALL OF DUTY</div>
+                    <div class="p mt-5 fw-bold">Dota is the one of the best game in the world<br>
+                        and it is very good to play with team.</div>
+                    <div class="">
+                        <button class="btn text-light mt-5" id="playNow">PLAY NOW</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiperContainer sthree text-center">
+                    <div class="h1">FORTNITE</div>
+                    <div class="p mt-5 fw-bold">Dota is the one of the best game in the world<br>
+                        and it is very good to play with team.</div>
+                    <div class="">
+                        <button class="btn text-light mt-5" id="playNow">PLAY NOW</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-button-next me-4">
+                <i class="fa-solid fa-circle-right"></i>
+            </div>
+            <div class="swiper-button-prev ms-4">
+                <i class="fa-solid fa-circle-left"></i>
+            </div>
+          </div>
+      
+    </div>
+</div>
+
+
+        <!-- Product search buy Box -->
+
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered gameDialogBox">
+              <div class="modal-content" style="background-color: black !important;">
+                <div class="modal-header topModal m-auto" style="width: 45%;">
+                <img src="../img/apexLegend.jpg" class="buyImg" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+               
+                    <div class="gameTopTitle d-flex justify-content-between mb-4">
+                        <div>
+                <div class="h4 my-0 gameNaming">
+                    Apex Legend
+                </div>
+                <div class="my-0"> <i class="fa-solid fa-fire me-1"></i>3M</div>
+              </div>
+                <div class="h6 payPrice">
+                $ 50.32
+                </div>
+            </div>
+        
+        <div class="cardsImage d-flex justify-content-between">
+        <div class="card text-center cardActive">
+            <img src="../img/wave.png" >
+            <p>Wave Pay</p>
+        </div>
+        <div class="card text-center">
+            <img src="../img/creditCard.png">
+            <p>Credit Card</p>
+        </div>
+        <div class="card text-center">
+            <img src="../img/paypal.png">
+            <p>Pay Pal</p>
+        </div>
+        </div>
+        
+        <div class="d-flex justify-content-between mt-4 fillInfo">
+            <div class="left">
+                <div class="mb-3">
+                <h5 class="mb-2">Card Number</h5>
+                <input type="text" >
+            </div>
+            <div>
+                <h5 class="mb-2">Exp Date</h5>
+                <input type="text"  >
+            </div>
+            </div>
+            <div class="right">
+                <div class="mb-3">
+                <h5 class="mb-2">CCV</h5>
+                <input type="text" >
+            </div>
+            <div>
+                <h5 class="mb-2">NAME</h5>
+                <input type="text" >
+            </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer buyBtnModal m-auto mb-3">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" >Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade bought" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content successBox bg-dark">
+                <div class="modal-header m-auto my-2">
+                    <i class="fa-solid fa-circle-check"></i>
+                  <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body text-center successText">
+                 <h3 class="mb-3 fw-bold">Thank You!</h3>
+                 <p>Your details have been successfully submited. <br> Thanks.</p>
+                </div>
+                <div class="modal-footer m-auto">
+                  <button class="btn btn-primary " data-bs-dismiss="modal" aria-label="Close">OK</button>
+                </div>
+          
+          </div>
+            </div>
+          </div>
+
+    </div>
+    <!---------------------  END HEADER  --------------------------------->
+        <!-----------------  TRENDING  ------------------------>
+    
+            <div class="trendingContainer  mt-5 ms-5">
+                <div class="trendingTitle">
+                <div class="h1 fs-5">
+                    Trending games
+                </div>
+                <div class="p me-5 seeAll"><a href="../games.html" style="color: var(--mainColor);">See all</a> <i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+
+                <div class="gameGridContainer swiper mySwiperTwo">
+                    <div class="swiper-wrapper swiper-wrapper-two">
+                <div class="gameContainer mt-5 swiper-slide">
+                    <div class="gameImage">
+                        <img src="../img/godofwar.jpg">
+                    </div>
+                    <div class="mt-3 title">
+                        <div class="h6">GOD OF WAR</div>
+                       <div class="p">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="fw-bold">3M</span>
+                       </div>
+                    </div>
+                    <div class="p fs-6 mt-2 pText" >
+                        One of the best PC game
+                    </div>
+                </div>
+
+                <div class="gameContainer mt-5 swiper-slide">
+                    <div class="gameImage">
+                        <img src="../img/valorant.jpg">
+                    </div>
+                    <div class="mt-3 title">
+                        <div class="h6">VALORANT</div>
+                       <div class="p">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="fw-bold">3M</span>
+                       </div>
+                    </div>
+                    <div class="p fs-6 mt-2 pText" >
+                        One of the best PC game
+                    </div>
+                </div>
+
+                <div class="gameContainer mt-5 swiper-slide">
+                    <div class="gameImage">
+                        <img src="../img/fortnite.jpg">
+                    </div>
+                    <div class="mt-3 title">
+                        <div class="h6">FORTNITE</div>
+                       <div class="p">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="fw-bold">3M</span>
+                       </div>
+                    </div>
+                    <div class="p fs-6 mt-2 pText" >
+                        One of the best PC game
+                    </div>
+                </div>
+
+                <div class="gameContainer mt-5 swiper-slide">
+                    <div class="gameImage">
+                        <img src="../img/gshin.jpg">
+                    </div>
+                    <div class="mt-3 title">
+                        <div class="h6">Genshin</div>
+                       <div class="p">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="fw-bold">3M</span>
+                       </div>
+                    </div>
+                    <div class="p fs-6 mt-2 pText" >
+                        One of the best PC game
+                    </div>
+                </div>
+
+                <div class="gameContainer mt-5 swiper-slide">
+                    <div class="gameImage">
+                        <img src="../img/ml.jpg">
+                    </div>
+                    <div class="mt-3 title">
+                        <div class="h6">MLBB</div>
+                       <div class="p">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="fw-bold">3M</span>
+                       </div>
+                    </div>
+                    <div class="p fs-6 mt-2 pText" >
+                        One of the best PC game
+                    </div>
+                </div>
+
+                <div class="gameContainer mt-5 swiper-slide">
+                    <div class="gameImage">
+                        <img src="../img/pubg.jpg">
+                    </div>
+                    <div class="mt-3 title">
+                        <div class="h6">PUBG</div>
+                       <div class="p">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="fw-bold">3M</span>
+                       </div>
+                    </div>
+                    <div class="p fs-6 mt-2 pText" >
+                        One of the best PC game
+                    </div>
+                </div>
+
+                <div class="gameContainer mt-5 swiper-slide">
+                    <div class="gameImage">
+                        <img src="../img/valorant.jpg">
+                    </div>
+                    <div class="mt-3 title">
+                        <div class="h6">VALORANT</div>
+                       <div class="p">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="fw-bold">3M</span>
+                       </div>
+                    </div>
+                    <div class="p fs-6 mt-2 pText" >
+                        One of the best PC game
+                    </div>
+                </div>
+
+</div>
+<div class="swiper-pagination"></div>
+            </div>
+            </div>
+        <!-----------------  END TRENDING  ----------------------------------->
+
+        <!-----------------   Section ADS(Or new Game)  ------------------------------------------->
+        
+        <div class="sectionContainer text-center">
+            <h1>WARCRAFT</h1>
+            <div class="p mt-5 fw-bold">Best Pc game in 2023. Hope you enjoy it.<br>
+                Ranking 13 and game graphic is<br>
+                fantastic</div>
+                <div class="sectionBtn">
+                    <button class="btn mt-5 text-light">PLAY NOW</button>
+                </div>
+        </div>
+
+        <!-----------------   END SECTION ADS(Or new Game)  ---------------------------------------------------------->
+
+
+        <!--------------------   ABOUT US  -------------------------------------------->
+        <a name="About"></a>
+            <div class="container-fluid mt-5 ms-sm-5 ms-3">
+                <div class="row aboutTitle">
+                    <div class="h2">About Us</div>
+                    <div class="col-md-6 leftAboutUs col-sm-5 mb-5">
+
+                        <div class="h5 my-5 ">Who we are?</div>
+                        <div class="p">Lorem ipsum dolor sit amet cet.
+                            Magna in bibendum mauriee 
+                            lectusnulla volutpatPrem  
+                            duis accum a mauriee 
+                            lectusnulla volutpatPrem.</div>
+                            <div class="readMore">
+                                <button class="btn mt-4 text-light">READ MORE</button>
+                            </div>
+                    </div>
+
+                    <div class="col-md-5 me-md-5 me-3 col-sm-6">
+                        <img src="../img/company2.jpeg" class="aboutImg" width="100%" height="100%">
+
+                    </div>
+                </div>
+                
+            </div>
+
+        <!----------------------  END ABOUT US  ------------------------------------------->
+
+        <!----------------------   WHY CHOOSE US  ---------------------------------->
+
+            <div class="container-fluid whyUs text-center" >
+                <div class="h2">Why Choose Us?</div>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-3 ms-md-5 mb-5 service">
+                <div class="card text-dark serviceCard" style="width: 16em; min-height: 260px;">
+                    <i class="fa-solid fa-gear serviceIcons"></i>
+                    <div class="card-body text-start">
+                      <h5 class="card-title">24Hour Service</h5>
+                      <p class="card-text">Some quick example text to build on the k example tex card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 ms-md-5 mb-5 service">
+                <div class="card text-dark serviceCard" style="width: 16em; min-height: 260px;">
+                    <i class="fa-solid fa-sack-dollar serviceIcons"></i>
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Cheap Price</h5>
+                      <p class="card-text">Some quick example text to build on the k example tex card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 ms-md-5 mb-5  service">
+                <div class="card text-dark serviceCard" style="width: 16em; min-height: 260px;">
+                    <i class="fa-solid fa-database serviceIcons"></i>
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Low Storage</h5>
+                      <p class="card-text">Some quick example text to build on the k example tex card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+                </div>
+            </div>
+
+        <!----------------------  END WHY CHOOSE US  ---------------------------------->
+
+        <!----------------------  GAMMING PRODUCTS  ------------------------------------------->
+
+        <div class="trendingContainer  mt-5 ms-5">
+            <div class="trendingTitle">
+            <div class="h1 fs-5">
+                Gaming Products
+            </div>
+            <div class="p me-5 seeAll"><a href="../games.html" style="color: var(--mainColor);">See all </a><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+            <div class="gameGridContainer swiper mySwiperTwo">
+                <div class="swiper-wrapper swiper-wrapper-two">
+            <div class="gameContainer mt-5 swiper-slide">
+                <div class="gameImage">
+                    <img src="../img/gamingKeyboard.png">
+                </div>
+                <div class="mt-3 title">
+                    <div class="h6">KEYBOARD</div>
+                   <div class="p">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="fw-bold">3M</span>
+                   </div>
+                </div>
+                <div class="p fs-6 mt-2 pText" >
+                    2023 best seller product.
+                </div>
+            </div>
+
+            <div class="gameContainer mt-5 swiper-slide">
+                <div class="gameImage">
+                    <img src="../img/chair.png">
+                </div>
+                <div class="mt-3 title">
+                    <div class="h6">CHAIR</div>
+                   <div class="p">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="fw-bold">3M</span>
+                   </div>
+                </div>
+                <div class="p fs-6 mt-2 pText" >
+                    2023 best seller product.
+                </div>
+            </div>
+
+            <div class="gameContainer mt-5 swiper-slide">
+                <div class="gameImage">
+                    <img src="../img/headSet.png">
+                </div>
+                <div class="mt-3 title">
+                    <div class="h6">HEADSET</div>
+                   <div class="p">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="fw-bold">3M</span>
+                   </div>
+                </div>
+                <div class="p fs-6 mt-2 pText" >
+                    2023 best seller product.
+                </div>
+            </div>
+
+            <div class="gameContainer mt-5 swiper-slide">
+                <div class="gameImage">
+                    <img src="../img/ps5.png">
+                </div>
+                <div class="mt-3 title">
+                    <div class="h6">PS 5</div>
+                   <div class="p">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="fw-bold">3M</span>
+                   </div>
+                </div>
+                <div class="p fs-6 mt-2 pText" >
+                    2023 best seller product.
+                </div>
+            </div>
+
+            <div class="gameContainer mt-5 swiper-slide">
+                <div class="gameImage">
+                    <img src="../img/chair.png">
+                </div>
+                <div class="mt-3 title">
+                    <div class="h6">CHAIR</div>
+                   <div class="p">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="fw-bold">3M</span>
+                   </div>
+                </div>
+                <div class="p fs-6 mt-2 pText" >
+                    2023 best seller product.
+                </div>
+            </div>
+
+            <div class="gameContainer mt-5 swiper-slide">
+                <div class="gameImage">
+                    <img src="../img/headSet.png">
+                </div>
+                <div class="mt-3 title">
+                    <div class="h6">HEADSET</div>
+                   <div class="p">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="fw-bold">3M</span>
+                   </div>
+                </div>
+                <div class="p fs-6 mt-2 pText" >
+                    2023 best seller product.
+                </div>
+            </div>
+
+            <div class="gameContainer mt-5 swiper-slide">
+                <div class="gameImage">
+                    <img src="../img/ps5.png">
+                </div>
+                <div class="mt-3 title">
+                    <div class="h6">PS 5</div>
+                   <div class="p">
+                    <i class="fa-solid fa-fire"></i>
+                    <span class="fw-bold">3M</span>
+                   </div>
+                </div>
+                <div class="p fs-6 mt-2 pText" >
+                    2023 best seller product.
+                </div>
+            </div>
+
+</div>
+<div class="swiper-pagination"></div>
+        </div>
+        </div>
+
+        <!----------------------  END GAMMING PRODUCTS  ------------------------------------------->
+
+<!-------------------------------  TESTIMONIAL  ------------------------------------------>
+
+        <div class="container-fluid mt-5 pt-5 testi">
+            <div class="h2 text-center mt-4">Customer's Testimonial</div>
+
+            <div class="swiper mySwiperThree mx-3">
+               <div class="swiper-wrapper swiper-wrapper-three" id="customerTesti">
+                
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-pagination customerActiveBtn"></div>
+
+            </div>
+        </div>
+
+<!-------------------------------  END TESTIMONIAL  ------------------------------------------>
+<!------------------------------  Adding User Testimonial  --------------------------------->
+
+        <div class="container-fluid userTesti pt-5 ">
+            <div class="h2 m-auto mt-5 text-center">Adding Review Here</div>
+            <div class="addUserTestiContainer mt-5 m-auto">
+                <div class="row" >
+                    <div class="col-sm-5 ms-md-5 ms-sm-3 col-12 rowColRes" >
+                        <div class="profile" >
+                        <div class="h5 mt-3">Upload Your profile</div>
+                            <div class="imgProfile mt-4 d-flex">
+                                <div class="cusImgUploadContainer">
+                                <img src="../img/cus2.jpg" id="uploadImage">
+                            </div>
+                                <i class="fa-solid fa-cloud-arrow-up mt-4 ms-5 fs-2" id="upload"></i>
+                                <input type="file" id="openFile" accept="image/png, image/jpeg, image/jpg" hidden>
+                            </div>
+                    </div><input type="file" id="openFile" accept="image/png, image/jpeg, image/jpg" hidden>
+                    <div class="inputBox text-start mt-4">
+                        <div class="h6">NAME</div>
+                        <input type="text" id="customerName">
+                    </div>
+                    <div class="inputBox text-start mt-5">
+                        <div class="h6">Location</div>
+                        <input type="text" id="CustomerLocation">
+                    </div>
+                    <div class="inputBox text-start my-5">
+                        <div class="h6">RATING</div>
+                        <input type="text" id="rating">
+                    </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-12 rowColRes">
+                        <div class="msgBox mt-3">
+                            <div class="h5 mb-5">Message Box</div>
+                            <textarea id="message"></textarea>
+                        </div>
+                        <div class="uploadBtn my-5">
+                            <button class="btn mt-md-5 mt-1 text-light text-center fw-bold" id="uploadAll">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  <!------------------------------  End Adding User Testimonial  --------------------------------->
+  
+  <!------------------------------   FOOTER   ---------------------------------------------->
+
+        <div class="container-fluid footer pt-5">
+            <div class="row">
+                <div class="col-md-4 col-6 offset-1 footerGameTitle">
+                    <div class="h4 mb-5">Games</div>
+                    <div class="p mb-3">Virtual Reality (VR)</div>
+                    <div class="p mb-3">Play Station 4 (PS 4)</div>
+                    <div class="p mb-3">PC Gaming</div>
+                    <div class="p mb-3">Mobile Gaming</div>
+                </div>
+                <div class="col-md-3 col-4 footerPartnerTitle">
+                    <div class="h4 mb-5">Partners</div>
+                    <div class="p mb-3">Google</div>
+                    <div class="p mb-3">Microsoft</div>
+                    <div class="p mb-3">Meta</div>
+                    <div class="p mb-3">Amazon</div>
+                </div>
+                <div class="col-md-4 col-sm-11 offset-md-0 offset-1 mt-md-0 mt-5 footerContactTitle">
+                    <div class="h4 mb-5">Contact Info</div>
+                    <div class="p mb-3">No.40, Hlaing Street</div>
+                    <div class="p mb-3">Yangon, Myanmar</div>
+                    <div class="p mb-3">+959232143342</div>
+                    <div class="socialIcons mb-3">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram ms-3"></i>
+                        <i class="fa-brands fa-twitter ms-3"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="line m-auto mt-5"></div>
+            <div class="p mt-1 pb-5 text-center designCrd">CopyRight 2023 @Aung Kaung Moe</div>
+        </div>
+
+  <!------------------------------   END FOOTER   ---------------------------------------------->
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 30,
+         keyboard: {
+           enabled: true,
+         },
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+
+<script>
+    var swiper = new Swiper(".mySwiperTwo", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+                slidesPerView: 1.5,
+            },
+            490: {
+                slidesPerView: 2,
+            },
+            670: {
+                slidesPerView: 2.5,
+            },
+            790: {
+                slidesPerView: 3,
+            },
+            870: {
+                slidesPerView: 3.5,
+            },
+            1010: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 5.5,
+            },
+      }
+    });
+  </script>
+
+<script>
+    var swiper = new Swiper(".mySwiperThree", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            600: {
+            slidesPerView: 2,
+            },
+            860: {
+                slidesPerView: 3,
+            },
+      }
+    });
+</script>
+
+
+</body>
+</html>
