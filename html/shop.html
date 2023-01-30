@@ -7,9 +7,12 @@
     <title>Game Website</title>
 
     <!---------------------    GOOGLE FONTS   ----------------------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Kaisei+Tokumin:wght@500&family=Newsreader:opsz@6..72&family=Poppins:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Kaisei+Tokumin:wght@500&family=Newsreader:opsz@6..72&family=Poppins:wght@300&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <!----------------------  FONT AWESOME  ------------------------------------->
     <script
@@ -46,7 +49,6 @@
 
     <script src="../js/script.js"></script>
     <script src="../js/list.js"></script>
-    
   </head>
   <body class="bg-black text-light">
     <!---------------------  HEADER  ----------------------------->
@@ -54,44 +56,76 @@
     <div class="container-fluid px-0">
       <div class="top-navbar d-flex justify-content-between">
         <div class="icon-back mt-4 ms-5">
-            <a href="../html/games.html">
-          <i class="fa-solid fa-arrow-left fs-3 mt-1"></i>
-        </a>
+          <a href="../html/games.html">
+            <i class="fa-solid fa-arrow-left fs-3 mt-1"></i>
+          </a>
         </div>
         <div class="iconGP mt-4 me-5 d-flex">
           <div class="favList me-3">
-            <i class="fa-solid fa-list clickFavList " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-            <div class="favListCount clickFavList" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">13</div>
+            <i
+              class="fa-solid fa-list clickFavList"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            ></i>
+            <div
+              class="favListCount clickFavList"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              13
+            </div>
           </div>
-            <div class="shopList">
-              <i class="fa-solid fa-cart-shopping clickShopList" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight"></i>
-              <div class="shopListCount clickShopList" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">3</div>
+          <div class="shopList">
+            <i
+              class="fa-solid fa-cart-shopping clickShopList"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight2"
+              aria-controls="offcanvasRight"
+            ></i>
+            <div
+              class="shopListCount clickShopList"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight2"
+              aria-controls="offcanvasRight"
+            >
+              3
+            </div>
           </div>
-          
         </div>
       </div>
       <div class="navline mt-4"></div>
     </div>
 
-    <div class="offcanvas offcanvas-end listBox" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div
+      class="offcanvas offcanvas-end listBox"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
       <div class="favListContainer text-light">
         <div class="favTop mt-3 ms-4 d-flex justify-content-between">
           <h3>Favourite List</h3>
-          <i class="fa-solid fa-list me-4 mt-2 fs-5 "></i>
+          <i class="fa-solid fa-list me-4 mt-2 fs-5"></i>
         </div>
         <div class="hrLine"></div>
       </div>
     </div>
 
-    <div class="offcanvas offcanvas-end listBox2" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+    <div
+      class="offcanvas offcanvas-end listBox2"
+      tabindex="-1"
+      id="offcanvasRight2"
+      aria-labelledby="offcanvasRightLabel"
+    >
       <div class="favListContainer text-light">
         <div class="favTop mt-3 ms-4 d-flex justify-content-between">
           <h3>Bought List</h3>
-          <i class="fa-solid fa-cart-shopping  me-4 mt-2 fs-5 "></i>
+          <i class="fa-solid fa-cart-shopping me-4 mt-2 fs-5"></i>
         </div>
         <div class="hrLine"></div>
       </div>
-
     </div>
     <!---------------------  END HEADER  ----------------------------->
 
@@ -105,14 +139,28 @@
             <div class="slideImg swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="../img/apexLegend.jpg" width="100%" height="100%" id="slideImage1"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../img/ClashRoyale.jpg" width="100%" height="100%" id="slideImage2" />
+                  <img
+                    src="../img/apexLegend.jpg"
+                    width="100%"
+                    height="100%"
+                    id="slideImage1"
+                  />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="../img/mlbbXstarwar.jpg" width="100%" height="100%" id="slideImage3" />
+                    src="../img/ClashRoyale.jpg"
+                    width="100%"
+                    height="100%"
+                    id="slideImage2"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="../img/mlbbXstarwar.jpg"
+                    width="100%"
+                    height="100%"
+                    id="slideImage3"
+                  />
                 </div>
               </div>
               <!-- <img src="../img/apexLegend.jpg" width="100%" height="100%"> -->
@@ -124,13 +172,19 @@
               ></i>
               <img
                 src="../img/apexLegend.jpg"
-                class="imgActive slideChooseImg" id="slideChooseImg1"
+                class="imgActive slideChooseImg"
+                id="slideChooseImg1"
               />
               <img
                 src="../img/ClashRoyale.jpg"
-                class="mx-lg-3 mx-md-1 mx-sm-3 mx-1 slideChooseImg" id="slideChooseImg2"
+                class="mx-lg-3 mx-md-1 mx-sm-3 mx-1 slideChooseImg"
+                id="slideChooseImg2"
               />
-              <img src="../img/mlbbXstarwar.jpg" class="slideChooseImg" id="slideChooseImg3" />
+              <img
+                src="../img/mlbbXstarwar.jpg"
+                class="slideChooseImg"
+                id="slideChooseImg3"
+              />
               <i
                 id="slideNext"
                 class="fa-solid fa-chevron-right fs-3 ms-lg-4 ms-md-0 ms-sm-3 swiper-button-next"
@@ -183,10 +237,16 @@
           <div class="right mt-5">
             <div class="h6 payPrice">$ 540.52</div>
             <div class="btnGp mt-3">
-              <button class="btn text-light fw-bold text-center py-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+              <button
+                class="btn text-light fw-bold text-center py-3"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal"
+              >
                 Buy Now</button
               ><br /><br />
-              <button class="btn text-light fw-bold text-center py-3 addingFavList">
+              <button
+                class="btn text-light fw-bold text-center py-3 addingFavList"
+              >
                 Add to Favourite
                 <i class="fa-solid fa-heart"></i>
               </button>
@@ -228,96 +288,127 @@
         </div>
       </div>
 
-      
       <!-- Product search Buy -->
 
-      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
         <div class="modal-dialog modal-dialog-centered gameDialogBox">
-          <div class="modal-content" style="background-color: black !important;">
-            <div class="modal-header topModal m-auto" style="width: 45%;">
-            <img src="../img/apexLegend.jpg" class="buyImg" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content" style="background-color: black !important">
+            <div class="modal-header topModal m-auto" style="width: 45%">
+              <img
+                src="../img/apexLegend.jpg"
+                class="buyImg"
+                width="100%"
+                height="100%"
+                style="
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                "
+              />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
-           
-                <div class="gameTopTitle d-flex justify-content-between mb-4">
-                    <div>
-            <div class="h4 my-0 gameNaming">
-                Apex Legend
-            </div>
-            <div class="my-0"> <i class="fa-solid fa-fire me-1"></i>3M</div>
-          </div>
-            <div class="h6 payPrice">
-            $ 50.32
-            </div>
-        </div>
-    
-    <div class="cardsImage d-flex justify-content-between">
-    <div class="card text-center cardActive">
-        <img src="../img/wave.png" >
-        <p>Wave Pay</p>
-    </div>
-    <div class="card text-center">
-        <img src="../img/creditCard.png">
-        <p>Credit Card</p>
-    </div>
-    <div class="card text-center">
-        <img src="../img/paypal.png">
-        <p>Pay Pal</p>
-    </div>
-    </div>
-    
-    <div class="d-flex justify-content-between mt-4 fillInfo">
-        <div class="left">
-            <div class="mb-3">
-            <h5 class="mb-2">Card Number</h5>
-            <input type="text" >
-        </div>
-        <div>
-            <h5 class="mb-2">Exp Date</h5>
-            <input type="text"  >
-        </div>
-        </div>
-        <div class="right">
-            <div class="mb-3">
-            <h5 class="mb-2">CCV</h5>
-            <input type="text" >
-        </div>
-        <div>
-            <h5 class="mb-2">NAME</h5>
-            <input type="text" >
-        </div>
-        </div>
-    </div>
-    
+              <div class="gameTopTitle d-flex justify-content-between mb-4">
+                <div>
+                  <div class="h4 my-0 gameNaming">Apex Legend</div>
+                  <div class="my-0">
+                    <i class="fa-solid fa-fire me-1"></i>3M
+                  </div>
+                </div>
+                <div class="h6 payPrice">$ 50.32</div>
+              </div>
+
+              <div class="cardsImage d-flex justify-content-between">
+                <div class="card text-center cardActive">
+                  <img src="../img/wave.png" />
+                  <p>Wave Pay</p>
+                </div>
+                <div class="card text-center">
+                  <img src="../img/creditCard.png" />
+                  <p>Credit Card</p>
+                </div>
+                <div class="card text-center">
+                  <img src="../img/paypal.png" />
+                  <p>Pay Pal</p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4 fillInfo">
+                <div class="left">
+                  <div class="mb-3">
+                    <h5 class="mb-2">Card Number</h5>
+                    <input type="text" />
+                  </div>
+                  <div>
+                    <h5 class="mb-2">Exp Date</h5>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="mb-3">
+                    <h5 class="mb-2">CCV</h5>
+                    <input type="text" />
+                  </div>
+                  <div>
+                    <h5 class="mb-2">NAME</h5>
+                    <input type="text" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="modal-footer buyBtnModal m-auto mb-3">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2">Buy</button>
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle2"
+              >
+                Buy
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade bought" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div
+        class="modal fade bought"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content successBox bg-dark">
             <div class="modal-header m-auto my-2">
-                <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-check"></i>
               <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <div class="modal-body text-center successText">
-             <h3 class="mb-3 fw-bold">Thank You!</h3>
-             <p>Your details have been successfully submited. <br> Thanks.</p>
+              <h3 class="mb-3 fw-bold">Thank You!</h3>
+              <p>
+                Your details have been successfully submited. <br />
+                Thanks.
+              </p>
             </div>
             <div class="modal-footer m-auto">
-              <button class="btn btn-primary addingProductList" data-bs-dismiss="modal" aria-label="Close">OK</button>
+              <button
+                class="btn btn-primary addingProductList"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                OK
+              </button>
             </div>
-      
-      </div>
+          </div>
         </div>
       </div>
-
-
-
     </div>
 
     <!------------------------   END GAME DETAILS   --------------------------------------------------->

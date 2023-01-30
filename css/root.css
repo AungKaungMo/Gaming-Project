@@ -1,373 +1,394 @@
-:root{
-    --textColor: white;
-    --navBgAndBoxes: #171717;
-    --opaColor: black;
-    --boxShadow: 1px 1px 4px #959595;
-    --imgBoxShadow: 4px 4px 8px #3f3f3f;
-    --contactTestiBox: 5px 5px 11px #5C5C5C;
-    --mainColor: #BC6515;
-    --navFontStyle:  'Kaisei Tokumin', serif;
-    --TitleFontStyle: 'Inria Serif', serif;
-    --paragraphFontStyle: 'Newsreader', serif;
-    --miniTextFontStyle: 'Rubik', sans-serif;
-    --textFontStyle: 'Poppins', sans-serif;
-    --customerBoxBorderActive: 2px solid #DC7000;
-    --customerBoxBorder: 2px solid white;
-    --gameButton: #414141;
-    --hoverEff: #DC7000;
-    --buyColor: #0074E4;
-    --productBoxShadow: 3px 4px 10px #A7A3A3, -3px -4px 10px #A7A3A3;
-    --buyButton: 7px 7px 10px #292929;
+:root {
+  --textColor: white;
+  --navBgAndBoxes: #171717;
+  --opaColor: black;
+  --boxShadow: 1px 1px 4px #959595;
+  --imgBoxShadow: 4px 4px 8px #3f3f3f;
+  --contactTestiBox: 5px 5px 11px #5c5c5c;
+  --mainColor: #bc6515;
+  --navFontStyle: "Kaisei Tokumin", serif;
+  --TitleFontStyle: "Inria Serif", serif;
+  --paragraphFontStyle: "Newsreader", serif;
+  --miniTextFontStyle: "Rubik", sans-serif;
+  --textFontStyle: "Poppins", sans-serif;
+  --customerBoxBorderActive: 2px solid #dc7000;
+  --customerBoxBorder: 2px solid white;
+  --gameButton: #414141;
+  --hoverEff: #dc7000;
+  --buyColor: #0074e4;
+  --productBoxShadow: 3px 4px 10px #a7a3a3, -3px -4px 10px #a7a3a3;
+  --buyButton: 7px 7px 10px #292929;
 }
-button{
-    box-shadow: var(--buyButton);
-    font-family: var(--paragraphFontStyle) !important;
+button {
+  box-shadow: var(--buyButton);
+  font-family: var(--paragraphFontStyle) !important;
 }
-html{
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-html::-webkit-scrollbar{
-    width: 1vw;
-    margin: 0 ;
-    padding: 0 ;
+html::-webkit-scrollbar {
+  width: 1vw;
+  margin: 0;
+  padding: 0;
 }
-html::-webkit-scrollbar-thumb{
-    background-color: rgb(112, 112, 112);
-    border-radius: 100px;
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 112, 112);
+  border-radius: 100px;
 }
-html::-webkit-scrollbar-track{
-    background-color:  rgb(56, 56, 56);
-    /* border-radius: 100px; */
+html::-webkit-scrollbar-track {
+  background-color: rgb(56, 56, 56);
+  /* border-radius: 100px; */
 }
-i,button{
-    cursor: pointer;
+i,
+button {
+  cursor: pointer;
 }
-a{
-    text-decoration: none;
-    color:var(--textColor)
+a {
+  text-decoration: none;
+  color: var(--textColor);
 }
-*{
-    margin: 0;
-    padding: 0;
-    font-family: var(--textFontStyle);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--textFontStyle);
 }
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-    font-family: var(--TitleFontStyle);
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--TitleFontStyle);
+  font-weight: bold;
 }
-p, .p{
-    font-family: var(--paragraphFontStyle);
+p,
+.p {
+  font-family: var(--paragraphFontStyle);
 }
-span{
-    font-family: var(--miniTextFontStyle);
+span {
+  font-family: var(--miniTextFontStyle);
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-            /* HEADER */
-.navBar{
-    background-color: var(--navBgAndBoxes) !important;
-    box-shadow: var(--boxShadow);
-
+/* HEADER */
+.navBar {
+  background-color: var(--navBgAndBoxes) !important;
+  box-shadow: var(--boxShadow);
 }
-.navBar .nav-item .nav-link{
-    color: var(--textColor);
-    font-family: var(--navFontStyle);
-    letter-spacing: 4px;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    margin-right: 1.7em;
+.navBar .nav-item .nav-link {
+  color: var(--textColor);
+  font-family: var(--navFontStyle);
+  letter-spacing: 4px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  margin-right: 1.7em;
 }
-.navBar .nav-item .nav-link::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background-color: var(--hoverEff);
-    transition: all 0.5s;
+.navBar .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--hoverEff);
+  transition: all 0.5s;
 }
-.navBar .nav-item .navActive::after{
-    width: 100% !important;
+.navBar .nav-item .navActive::after {
+  width: 100% !important;
 }
-.navBar .nav-item .nav-link:hover::after{
-    width: 100%;
+.navBar .nav-item .nav-link:hover::after {
+  width: 100%;
 }
 .fa-user {
-    padding: 0.5em;
-    background-color: var(--mainColor);
-    border-radius: 50%;
-    transition: all 0.5s;
+  padding: 0.5em;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  transition: all 0.5s;
 }
-.fa-user:hover{
-    opacity: 0.6;
+.fa-user:hover {
+  opacity: 0.6;
 }
-.fa-magnifying-glass{
-    padding: 0.5em;
-    opacity: 0.5;
-    transition: all 0.4s;
+.fa-magnifying-glass {
+  padding: 0.5em;
+  opacity: 0.5;
+  transition: all 0.4s;
 }
-.fa-magnifying-glass:hover{
-    opacity: 1;
+.fa-magnifying-glass:hover {
+  opacity: 1;
 }
-.modal-header{
-    border-bottom: unset;
+.modal-header {
+  border-bottom: unset;
 }
-.btn-close{
-    background: transparent url(../img/[CITYPNG.COM]HD\ White\ X\ Cross\ Mark\ Icon\ PNG\ -\ 5860x5860.png) center/1em auto no-repeat
+.btn-close {
+  background: transparent
+    url(../img/[CITYPNG.COM]HD\ White\ X\ Cross\ Mark\ Icon\ PNG\ -\ 5860x5860.png)
+    center/1em auto no-repeat;
 }
-#searchInput{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    border-bottom: 1px solid var(--textColor);
-    color: var(--textColor);
-    font-size: 0.8em;
+#searchInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--textColor);
+  color: var(--textColor);
+  font-size: 0.8em;
 }
-.middleNavBarChange{
-    display: none;
+.middleNavBarChange {
+  display: none;
 }
-.resBar{
-    width: 300px;
-    height: 100vh;
-    background-color: var(--navBgAndBoxes);
-    box-shadow: var(--boxShadow);
-    position: absolute;
-    z-index: 15;
-    top: 0;
-    text-align: center;
-    left: -400px;
-    opacity: 0;
-    transition: all 0.7s;
+.resBar {
+  width: 300px;
+  height: 100vh;
+  background-color: var(--navBgAndBoxes);
+  box-shadow: var(--boxShadow);
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  text-align: center;
+  left: -400px;
+  opacity: 0;
+  transition: all 0.7s;
 }
-#close{
-    margin:2em 0 5em 9em;
-    font-size: 1.4em;
-    transition: all 0.5s;
+#close {
+  margin: 2em 0 5em 9em;
+  font-size: 1.4em;
+  transition: all 0.5s;
 }
-#close:hover{
-    transform: rotate(360deg);
-    color: var(--mainColor);
+#close:hover {
+  transform: rotate(360deg);
+  color: var(--mainColor);
 }
-.resBarAdd{
-    left: 0;
-    opacity: 1;
+.resBarAdd {
+  left: 0;
+  opacity: 1;
 }
 .resBar .navContainer i {
-    color: var(--textColor);
-    opacity: 0.6;
-    margin-right: 0.2em;
+  color: var(--textColor);
+  opacity: 0.6;
+  margin-right: 0.2em;
 }
 .resBar .navContainer .news {
-    margin-right: 0.9em;
+  margin-right: 0.9em;
 }
-.resBar .navContainer span a{
-    color: var(--textColor);
-    text-decoration: none;
-    letter-spacing: 3px;
-    transition: all 0.6s;
+.resBar .navContainer span a {
+  color: var(--textColor);
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: all 0.6s;
 }
-.resBar .navContainer .resNavActive{
-    color: var(--mainColor);
+.resBar .navContainer .resNavActive {
+  color: var(--mainColor);
 }
-.resBar .navContainer span a:hover{
-    color: var(--mainColor);
+.resBar .navContainer span a:hover {
+  color: var(--mainColor);
 }
-@media screen and (max-width:770px) {
-    .middleNavBar{
-        display: none;
-    }
-    .middleNavBarChange{
-        display: block
-    }
-}
-
-      /* Footer */
-.footer{
-    margin-top: 6.5em;
-    background-color: var(--navBgAndBoxes);
-}
-.footerGameTitle .h4, .footerPartnerTitle .h4, .footerContactTitle .h4{
-    letter-spacing: 3px;
-    position: relative;
-}
-.footerGameTitle .h4::after, .footerPartnerTitle .h4::after, .footerContactTitle .h4::after{
-    content: '';
-    position: absolute;
-    width: 2.5em;
-    height: 3px;
-    background-color: var(--mainColor);
-    bottom: -7px;
-    left: 0;
-}
-.footerGameTitle .p, .footerPartnerTitle .p, .footerContactTitle .p{
-    cursor: pointer;
-    font-size: 1em;
-    opacity: 0.6;
-    letter-spacing: 2px;
-    transition: all 0.4s;
-}
-.footerGameTitle .p:hover, .footerPartnerTitle .p:hover, .footerContactTitle .p:hover{
-    color: var(--mainColor);
-    opacity: 1;
+@media screen and (max-width: 770px) {
+  .middleNavBar {
+    display: none;
+  }
+  .middleNavBarChange {
+    display: block;
+  }
 }
 
-.footerContactTitle .socialIcons i{
-    font-size: 2em;
-    transition: all 0.4s;
+/* Footer */
+.footer {
+  margin-top: 6.5em;
+  background-color: var(--navBgAndBoxes);
 }
-.footerContactTitle .socialIcons i:hover{
-    color: var(--mainColor);
+.footerGameTitle .h4,
+.footerPartnerTitle .h4,
+.footerContactTitle .h4 {
+  letter-spacing: 3px;
+  position: relative;
 }
-.footer .line{
-    width: 80%;
-    height: 2px;
-    background-color: var(--mainColor);
+.footerGameTitle .h4::after,
+.footerPartnerTitle .h4::after,
+.footerContactTitle .h4::after {
+  content: "";
+  position: absolute;
+  width: 2.5em;
+  height: 3px;
+  background-color: var(--mainColor);
+  bottom: -7px;
+  left: 0;
 }
-.footer .designCrd{
-    font-size: 0.8em;
-    letter-spacing: 3px;
+.footerGameTitle .p,
+.footerPartnerTitle .p,
+.footerContactTitle .p {
+  cursor: pointer;
+  font-size: 1em;
+  opacity: 0.6;
+  letter-spacing: 2px;
+  transition: all 0.4s;
 }
-@media screen and (max-width:500px) {
-    .footer .footerGameTitle{
-        width: 100%;
-    }
-    .footer .footerPartnerTitle{
-        width: 100%;
-        margin-left: 8.33333333%;
-        margin-top: 3em;
-    }
+.footerGameTitle .p:hover,
+.footerPartnerTitle .p:hover,
+.footerContactTitle .p:hover {
+  color: var(--mainColor);
+  opacity: 1;
 }
- 
+
+.footerContactTitle .socialIcons i {
+  font-size: 2em;
+  transition: all 0.4s;
+}
+.footerContactTitle .socialIcons i:hover {
+  color: var(--mainColor);
+}
+.footer .line {
+  width: 80%;
+  height: 2px;
+  background-color: var(--mainColor);
+}
+.footer .designCrd {
+  font-size: 0.8em;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 500px) {
+  .footer .footerGameTitle {
+    width: 100%;
+  }
+  .footer .footerPartnerTitle {
+    width: 100%;
+    margin-left: 8.33333333%;
+    margin-top: 3em;
+  }
+}
+
 /* For dropBox */
 
-.topModal{
-    width: 100%;
-    height: 30vh;
-    display: unset;
-    padding: 0;
+.topModal {
+  width: 100%;
+  height: 30vh;
+  display: unset;
+  padding: 0;
 }
-.topModal button{
-    position: absolute;
-    margin: 0 !important;
-    padding: 0.65em !important;
-    border-radius: 50%;
-    right: -15px;
-    top: -15px;
-    background-color: var(--buyColor);
-    opacity: 1 !important;
+.topModal button {
+  position: absolute;
+  margin: 0 !important;
+  padding: 0.65em !important;
+  border-radius: 50%;
+  right: -15px;
+  top: -15px;
+  background-color: var(--buyColor);
+  opacity: 1 !important;
 }
-.modal{
-    --bs-modal-footer-border-width: unset !important;
+.modal {
+  --bs-modal-footer-border-width: unset !important;
 }
 .modal-body .h4 {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
-.modal-body .h4 + div{
-    color: var(--buyColor);
+.modal-body .h4 + div {
+  color: var(--buyColor);
 }
-.card{
+.card {
+  width: 140px;
+  height: 120px;
+  background-color: var(--opaColor);
+  box-shadow: var(--boxShadow);
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.card img {
+  width: 80%;
+  margin: auto;
+}
+.card:nth-child(2) img {
+  width: 60%;
+}
+.card:first-child img {
+  width: 65%;
+}
+.cardActive {
+  border: 2px solid var(--buyColor);
+}
+.card:hover {
+  opacity: 0.6;
+}
+.fillInfo input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 200px;
+  border-bottom: 2px solid var(--buyColor);
+  color: rgb(196, 196, 196);
+  font-size: 0.8em;
+  padding-left: 0.3em;
+}
+.buyBtnModal button {
+  width: 200px;
+}
+.successBox i {
+  font-size: 3em;
+  color: var(--buyColor);
+}
+.successText p {
+  opacity: 0.6;
+}
+@media screen and (max-width: 480px) {
+  .fillInfo input {
     width: 140px;
-    height: 120px;
-    background-color: var(--opaColor);
-    box-shadow: var(--boxShadow);
-    cursor: pointer;
-    border-radius: 15px;
-    transition: all 0.3s;
+  }
 }
-.card img{
-    width: 80%;
-    margin: auto;
-}
-.card:nth-child(2) img{
-    width: 60%;
-}
-.card:first-child img{
-    width: 65%;
-}
-.cardActive{
-    border: 2px solid var(--buyColor);
-}
-.card:hover{
-    opacity: 0.6;
-}
-.fillInfo input{
-    border: none;
-    background-color: transparent;
-    outline: none;
-    width: 200px;
-    border-bottom: 2px solid var(--buyColor);
-    color: rgb(196, 196, 196);
-    font-size: 0.8em;
-    padding-left: 0.3em;
-}
-.buyBtnModal button{
- width: 200px;
-}
-.successBox i{
-    font-size: 3em ;
-    color: var(--buyColor);
-}
-.successText p{
-    opacity: 0.6;
-}
-@media screen and (max-width:480px) {
-    .fillInfo input{
-        width: 140px;
-    }
-}
-@media screen and (max-width:350px) {
-    .fillInfo input{
-        width: 100px;
-    }
+@media screen and (max-width: 350px) {
+  .fillInfo input {
+    width: 100px;
+  }
 }
 /* Search */
-.searchProductGames{
-    background-color: var(--opaColor);
-    max-width: 500px;
-    user-select: none;
-    border-bottom: 1px solid rgb(48, 48, 48);
+.searchProductGames {
+  background-color: var(--opaColor);
+  max-width: 500px;
+  user-select: none;
+  border-bottom: 1px solid rgb(48, 48, 48);
 }
-.searchProduct{
-    width: 130px;
-    height: 80px;
+.searchProduct {
+  width: 130px;
+  height: 80px;
 }
-.searchProductDetails p{
-    font-size: 0.8em;
-    opacity: 0.7;
+.searchProductDetails p {
+  font-size: 0.8em;
+  opacity: 0.7;
 }
-.productGameGp .rightGp i{
-    transition: all 0.3s;
+.productGameGp .rightGp i {
+  transition: all 0.3s;
 }
-.productGameGp .rightGp i:hover{
-    opacity: 0.7;
+.productGameGp .rightGp i:hover {
+  opacity: 0.7;
 }
-.searchProduct img{
-    transition: all 0.4s;
-    cursor: pointer;
+.searchProduct img {
+  transition: all 0.4s;
+  cursor: pointer;
 }
-.searchProduct img:hover{
-    opacity: 0.6;
+.searchProduct img:hover {
+  opacity: 0.6;
 }
-@media screen and (max-width:500px) {
-    .searchProductDetails h5{
-        margin-top: 0.8em;
-        font-size: 1em !important;
-    
-    }
-    .searchProduct {
-        width: 100px;
-    }
-    .productGameGp .rightGp i{
-        font-size: 1em !important;
-    }
-    .productGameGp .leftGp p{
-        display: none;
-    }
-    .productGameGp .leftGp span{
-        display: block;
-    }
+@media screen and (max-width: 500px) {
+  .searchProductDetails h5 {
+    margin-top: 0.8em;
+    font-size: 1em !important;
+  }
+  .searchProduct {
+    width: 100px;
+  }
+  .productGameGp .rightGp i {
+    font-size: 1em !important;
+  }
+  .productGameGp .leftGp p {
+    display: none;
+  }
+  .productGameGp .leftGp span {
+    display: block;
+  }
 }

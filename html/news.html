@@ -1,405 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Website</title>
 
-      <!---------------------    GOOGLE FONTS   ----------------------------------->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Kaisei+Tokumin:wght@500&family=Newsreader:opsz@6..72&family=Poppins:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <!---------------------    GOOGLE FONTS   ----------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Kaisei+Tokumin:wght@500&family=Newsreader:opsz@6..72&family=Poppins:wght@300&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-      <!----------------------  FONT AWESOME  ------------------------------------->
-      <script src="https://kit.fontawesome.com/de471be2d6.js" crossorigin="anonymous"></script>
+    <!----------------------  FONT AWESOME  ------------------------------------->
+    <script
+      src="https://kit.fontawesome.com/de471be2d6.js"
+      crossorigin="anonymous"
+    ></script>
 
-      <!------------------------  BOOTSTRAP  --------------------------------------------->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-       <!-- Link Swiper's CSS -->
-       <link
-       rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-     />
+    <!------------------------  BOOTSTRAP  --------------------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
-      <!--------------------------  CSS  ------------------------------------------>
-      <link rel="stylesheet" href="../css/root.css">
-      <link rel="stylesheet" href="../css/news.css">
+    <!--------------------------  CSS  ------------------------------------------>
+    <link rel="stylesheet" href="../css/root.css" />
+    <link rel="stylesheet" href="../css/news.css" />
 
-      <!---------------------------  JQUERY  ------------------------------------------->
-      <script src="../Jquery/jquery3.6.0.js"></script>
+    <!---------------------------  JQUERY  ------------------------------------------->
+    <script src="../Jquery/jquery3.6.0.js"></script>
 
-  <!----------------------   ISOTOPE FILTERING  -------------------------------------->
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!----------------------   ISOTOPE FILTERING  -------------------------------------->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
-      <!---------------------------  JavaScript  --------------------------------------------->
-     
-      <script src="../js/script.js"></script>
-      <script src="../js/search.js"></script>
+    <!---------------------------  JavaScript  --------------------------------------------->
 
-</head>
-    <!---------------------  HEADER  ----------------------------->
-<body class="bg-black text-light"> 
+    <script src="../js/script.js"></script>
+    <script src="../js/search.js"></script>
+  </head>
+  <!---------------------  HEADER  ----------------------------->
+  <body class="bg-black text-light">
     <div class="container-fluid px-0 py-0 headerBg">
-        <div class="resBar">
-            <i class="fa-solid fa-xmark" id="close"></i>
-            <div class="navContainer">
-                <i class="fa-solid fa-house fs-5"></i>
-                <span><a href="../html/homeAndAbout.html" class="fs-6">HOME</a></span>
-            </div>
-            <div class="navContainer">
-                <i class="fa-solid fa-circle-info mt-5 fs-5"></i>
-                <span><a href="#" class="fs-6">ABOUT</a></span>
-            </div>
-            <div class="navContainer">
-                <i class="fa-solid fa-newspaper mt-5 fs-5"></i>
-                <span><a href="../html/news.html" class="fs-6 news">NEWS</a></span>
-            </div>
-            <div class="navContainer">
-                <i class="fa-solid fa-gamepad mt-5 fs-5"></i>
-                <span><a href="../html/games.html" class="fs-6 resNavActive">GAMES</a></span>
-            </div>
+      <div class="resBar">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <div class="navContainer">
+          <i class="fa-solid fa-house fs-5"></i>
+          <span><a href="../html/homeAndAbout.html" class="fs-6">HOME</a></span>
         </div>
-        <nav class="navbar navbar-expand-md bg-body-tertiary navBar" >
-            <div class="container-fluid">
-              <a class="navbar-brand ms-3" href="#">
-                <img src="../img/logo.png" width="60px" height="60px">
-              </a>
-         
-                <ul class="navbar-nav m-auto middleNavBar">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../html/homeAndAbout.html">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="../html/games.html">GAMES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link navActive" href="../html/news.html">NEWS</a>
-                  </li>
-                </ul>
+        <div class="navContainer">
+          <i class="fa-solid fa-circle-info mt-5 fs-5"></i>
+          <span><a href="#" class="fs-6">ABOUT</a></span>
+        </div>
+        <div class="navContainer">
+          <i class="fa-solid fa-newspaper mt-5 fs-5"></i>
+          <span><a href="../html/news.html" class="fs-6 news">NEWS</a></span>
+        </div>
+        <div class="navContainer">
+          <i class="fa-solid fa-gamepad mt-5 fs-5"></i>
+          <span
+            ><a href="../html/games.html" class="fs-6 resNavActive"
+              >GAMES</a
+            ></span
+          >
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md bg-body-tertiary navBar">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="#">
+            <img src="../img/logo.png" width="60px" height="60px" />
+          </a>
 
-                <ul class="m-auto middleNavBarChange">
-                    <i class="fa-solid fa-bars fs-3 text-light" id="slideBtn"></i>
-                </ul>
-                <form class="d-flex me-3" role="search">
+          <ul class="navbar-nav m-auto middleNavBar">
+            <li class="nav-item">
+              <a class="nav-link" href="../html/homeAndAbout.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../html/games.html">GAMES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navActive" href="../html/news.html">NEWS</a>
+            </li>
+          </ul>
 
-                    <i class="fa-sharp fa-solid fa-magnifying-glass text-light" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                      <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> /
-                      <!-- <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;" aria-modal="true" role="dialog"> -->
-                        <div class="modal-dialog" style="margin: 0 auto !important; margin-top: 1.8em !important;">
-                          <div class="modal-content" style="background-color: var(--opaColor); border: unset; border-bottom-left-radius: 0;border-bottom: 1px solid rgb(48, 48, 48); border-bottom-right-radius: 0;">
-                            <div class="modal-header">
-                              <div class="modal-title fs-5" id="exampleModalLabel">
-                                <input type="text" id="searchInput">
-                              </div>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                          </div>
-                        </div>
-                       
-                        <div id="searchItemsContainer"></div>
-
-                      </div>
-                            <i class="fa-solid fa-user text-light ms-3"></i>
-                </form>
-              </div>
-            
-          </nav>
-
-          <div class="newsContainerText">
-            <div class="h1 mb-5">Dota 2 Race</div>
-            <div class="p">Lorem ipsum dolor sit amet cet. Lorem ipsum dolor sit amet cet.<br>
-                Magna in bibendum mauriee Magna in bibendum mauriee<br>
-                lectusnulla volutpatPrem lectusnulla volutpatPrem<br>
-                duis accum a. duis accum a.</div>
-                <div class="more mt-5">
-                    <button class="btn fw-bold text-light">Read More</button>
+          <ul class="m-auto middleNavBarChange">
+            <i class="fa-solid fa-bars fs-3 text-light" id="slideBtn"></i>
+          </ul>
+          <form class="d-flex me-3" role="search">
+            <i
+              class="fa-sharp fa-solid fa-magnifying-glass text-light"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            ></i>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              /
+              <!-- <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;" aria-modal="true" role="dialog"> -->
+              <div
+                class="modal-dialog"
+                style="margin: 0 auto !important; margin-top: 1.8em !important"
+              >
+                <div
+                  class="modal-content"
+                  style="
+                    background-color: var(--opaColor);
+                    border: unset;
+                    border-bottom-left-radius: 0;
+                    border-bottom: 1px solid rgb(48, 48, 48);
+                    border-bottom-right-radius: 0;
+                  "
+                >
+                  <div class="modal-header">
+                    <div class="modal-title fs-5" id="exampleModalLabel">
+                      <input type="text" id="searchInput" />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
-          </div>
-          
-          </div>
-          
-          <!-----------------  END HEADER  ---------------------------------->
-          
-             
-      <!-- Product search Buy -->
+                </div>
+              </div>
 
-      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered gameDialogBox">
-          <div class="modal-content" style="background-color: black !important;">
-            <div class="modal-header topModal m-auto" style="width: 45%;">
-            <img src="../img/apexLegend.jpg" class="buyImg" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div id="searchItemsContainer"></div>
             </div>
-            <div class="modal-body">
-           
-                <div class="gameTopTitle d-flex justify-content-between mb-4">
-                    <div>
-            <div class="h4 my-0 gameNaming">
-                Apex Legend
-            </div>
-            <div class="my-0"> <i class="fa-solid fa-fire me-1"></i>3M</div>
+            <i class="fa-solid fa-user text-light ms-3"></i>
+          </form>
+        </div>
+      </nav>
+
+      <div class="newsContainerText">
+        <div class="h1 mb-5">Dota 2 Race</div>
+        <div class="p">
+          Lorem ipsum dolor sit amet cet. Lorem ipsum dolor sit amet cet.<br />
+          Magna in bibendum mauriee Magna in bibendum mauriee<br />
+          lectusnulla volutpatPrem lectusnulla volutpatPrem<br />
+          duis accum a. duis accum a.
+        </div>
+        <div class="more mt-5">
+          <button class="btn fw-bold text-light">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------  END HEADER  ---------------------------------->
+
+    <!-- Product search Buy -->
+
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered gameDialogBox">
+        <div class="modal-content" style="background-color: black !important">
+          <div class="modal-header topModal m-auto" style="width: 45%">
+            <img
+              src="../img/apexLegend.jpg"
+              class="buyImg"
+              width="100%"
+              height="100%"
+              style="
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+              "
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-            <div class="h6 payPrice">
-            $ 50.32
+          <div class="modal-body">
+            <div class="gameTopTitle d-flex justify-content-between mb-4">
+              <div>
+                <div class="h4 my-0 gameNaming">Apex Legend</div>
+                <div class="my-0"><i class="fa-solid fa-fire me-1"></i>3M</div>
+              </div>
+              <div class="h6 payPrice">$ 50.32</div>
             </div>
-        </div>
-    
-    <div class="cardsImage d-flex justify-content-between">
-    <div class="card text-center cardActive">
-        <img src="../img/wave.png" >
-        <p>Wave Pay</p>
-    </div>
-    <div class="card text-center">
-        <img src="../img/creditCard.png">
-        <p>Credit Card</p>
-    </div>
-    <div class="card text-center">
-        <img src="../img/paypal.png">
-        <p>Pay Pal</p>
-    </div>
-    </div>
-    
-    <div class="d-flex justify-content-between mt-4 fillInfo">
-        <div class="left">
-            <div class="mb-3">
-            <h5 class="mb-2">Card Number</h5>
-            <input type="text" >
-        </div>
-        <div>
-            <h5 class="mb-2">Exp Date</h5>
-            <input type="text"  >
-        </div>
-        </div>
-        <div class="right">
-            <div class="mb-3">
-            <h5 class="mb-2">CCV</h5>
-            <input type="text" >
-        </div>
-        <div>
-            <h5 class="mb-2">NAME</h5>
-            <input type="text" >
-        </div>
-        </div>
-    </div>
-    
+
+            <div class="cardsImage d-flex justify-content-between">
+              <div class="card text-center cardActive">
+                <img src="../img/wave.png" />
+                <p>Wave Pay</p>
+              </div>
+              <div class="card text-center">
+                <img src="../img/creditCard.png" />
+                <p>Credit Card</p>
+              </div>
+              <div class="card text-center">
+                <img src="../img/paypal.png" />
+                <p>Pay Pal</p>
+              </div>
             </div>
-            <div class="modal-footer buyBtnModal m-auto mb-3">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" >Buy</button>
+
+            <div class="d-flex justify-content-between mt-4 fillInfo">
+              <div class="left">
+                <div class="mb-3">
+                  <h5 class="mb-2">Card Number</h5>
+                  <input type="text" />
+                </div>
+                <div>
+                  <h5 class="mb-2">Exp Date</h5>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="right">
+                <div class="mb-3">
+                  <h5 class="mb-2">CCV</h5>
+                  <input type="text" />
+                </div>
+                <div>
+                  <h5 class="mb-2">NAME</h5>
+                  <input type="text" />
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer buyBtnModal m-auto mb-3">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#exampleModalToggle2"
+            >
+              Buy
+            </button>
           </div>
         </div>
       </div>
-      <div class="modal fade bought" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content successBox bg-dark">
-            <div class="modal-header m-auto my-2">
-                <i class="fa-solid fa-circle-check"></i>
-              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-            </div>
-            <div class="modal-body text-center successText">
-             <h3 class="mb-3 fw-bold">Thank You!</h3>
-             <p>Your details have been successfully submited. <br> Thanks.</p>
-            </div>
-            <div class="modal-footer m-auto">
-              <button class="btn btn-primary " data-bs-dismiss="modal" aria-label="Close">OK</button>
-            </div>
-      
-      </div>
+    </div>
+    <div
+      class="modal fade bought"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content successBox bg-dark">
+          <div class="modal-header m-auto my-2">
+            <i class="fa-solid fa-circle-check"></i>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body text-center successText">
+            <h3 class="mb-3 fw-bold">Thank You!</h3>
+            <p>
+              Your details have been successfully submited. <br />
+              Thanks.
+            </p>
+          </div>
+          <div class="modal-footer m-auto">
+            <button
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              OK
+            </button>
+          </div>
         </div>
       </div>
+    </div>
 
-          <!----------------  NEWS  -------------------------------------------------->
+    <!----------------  NEWS  -------------------------------------------------->
 
-          <div class="news mt-5 ms-5">
-            <div class="h2">Latest News</div>
-        <div class="row">
-            <div class="newsContainer col-md-6 col-11 mt-5">
-                <div class="liveContainer liveOne mt-5">
-                    <div class="imageContainer">
-                        <button class="btn text-light fw-bold">Live</button>
-                    </div>
-                </div>
-                <div class="newsLiveTextContainer mt-4">
-                    <div class="h3">
-                        M4 Final World Cup
-                    </div>
-                    <div class="p mt-5">
-                        Lorem ipsum dolor sit amet cet.
-Magna in bibendum mauriee 
-lectusnulla volutpatPrem  
-duis accum a.em ipsum dolor sit amet cet.
-Magna in bibendum mauriee 
-lectusnulla volutpatPrem  
-duis accum a.
-                    </div>
-                    <div class="liveBtn mt-4">
-                        <button class="btn text-light fw-bold">Go Live</button>
-                    </div>
-                </div>
-
-                <div class="liveContainer mt-5 liveTwo">
-                    <div class="imageContainer">
-                        <button class="btn text-light fw-bold">Live</button>
-                    </div>
-                </div>
-                <div class="newsLiveTextContainer mt-4">
-                    <div class="h3">
-                        Dota2 Final World Cup
-                    </div>
-                    <div class="p mt-5">
-                        Lorem ipsum dolor sit amet cet.
-Magna in bibendum mauriee 
-lectusnulla volutpatPrem  
-duis accum a.em ipsum dolor sit amet cet.
-Magna in bibendum mauriee 
-lectusnulla volutpatPrem  
-duis accum a.
-                    </div>
-                    <div class="liveBtn mt-4">
-                        <button class="btn text-light fw-bold">Go Live</button>
-                    </div>
-                </div>
-
-
+    <div class="news mt-5 ms-5">
+      <div class="h2">Latest News</div>
+      <div class="row">
+        <div class="newsContainer col-md-6 col-11 mt-5">
+          <div class="liveContainer liveOne mt-5">
+            <div class="imageContainer">
+              <button class="btn text-light fw-bold">Live</button>
             </div>
-
-
-            <div class="col-md-5 col-11 ms-md-4 mt-5">
-                <div class="buttonGp mb-5 mt-5 mb-2 text-center">
-                    <button class="btn text-light fw-bold currentBtn ms-2 mt-3" data-filter="*">ALL</button>
-                    <button class="btn text-light fw-bold mt-3 ms-2" data-filter=".new">NEWEST</button>
-                    <button class="btn text-light fw-bold mt-3 ms-2" data-filter=".popular">POPULAR</button>
+          </div>
+          <div class="newsLiveTextContainer mt-4">
+            <div class="h3">M4 Final World Cup</div>
+            <div class="p mt-5">
+              Lorem ipsum dolor sit amet cet. Magna in bibendum mauriee
+              lectusnulla volutpatPrem duis accum a.em ipsum dolor sit amet cet.
+              Magna in bibendum mauriee lectusnulla volutpatPrem duis accum a.
             </div>
-            <div class="miniNews">
+            <div class="liveBtn mt-4">
+              <button class="btn text-light fw-bold">Go Live</button>
+            </div>
+          </div>
+
+          <div class="liveContainer mt-5 liveTwo">
+            <div class="imageContainer">
+              <button class="btn text-light fw-bold">Live</button>
+            </div>
+          </div>
+          <div class="newsLiveTextContainer mt-4">
+            <div class="h3">Dota2 Final World Cup</div>
+            <div class="p mt-5">
+              Lorem ipsum dolor sit amet cet. Magna in bibendum mauriee
+              lectusnulla volutpatPrem duis accum a.em ipsum dolor sit amet cet.
+              Magna in bibendum mauriee lectusnulla volutpatPrem duis accum a.
+            </div>
+            <div class="liveBtn mt-4">
+              <button class="btn text-light fw-bold">Go Live</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-11 ms-md-4 mt-5">
+          <div class="buttonGp mb-5 mt-5 mb-2 text-center">
+            <button
+              class="btn text-light fw-bold currentBtn ms-2 mt-3"
+              data-filter="*"
+            >
+              ALL
+            </button>
+            <button class="btn text-light fw-bold mt-3 ms-2" data-filter=".new">
+              NEWEST
+            </button>
+            <button
+              class="btn text-light fw-bold mt-3 ms-2"
+              data-filter=".popular"
+            >
+              POPULAR
+            </button>
+          </div>
+          <div class="miniNews">
             <div class="miniNewsContainer popular">
-                <div class="imageContainer mt-3 ">
-                    <img src="../img/mlbbXstarwar.jpg">
-                </div>
-                <div class="textContainer mt-3">
-                    <h5>MLBB collaborates with star wars</h5>
-                    <p class="mt-4">Updated - 12.3.2022</p>
-                </div>
-
+              <div class="imageContainer mt-3">
+                <img src="../img/mlbbXstarwar.jpg" />
+              </div>
+              <div class="textContainer mt-3">
+                <h5>MLBB collaborates with star wars</h5>
+                <p class="mt-4">Updated - 12.3.2022</p>
+              </div>
             </div>
 
             <div class="miniNewsContainer mt-3 popular">
-                <div class="imageContainer mt-5">
-                    <img src="../img/falconVsRrq.jpg">
-                </div>
-                <div class="textContainer mt-3">
-                    <h5>FALCON VS RRQ (3-2)</h5>
-                    <p class="mt-4">Updated - 12.1.2023</p>
-                </div>
-
+              <div class="imageContainer mt-5">
+                <img src="../img/falconVsRrq.jpg" />
+              </div>
+              <div class="textContainer mt-3">
+                <h5>FALCON VS RRQ (3-2)</h5>
+                <p class="mt-4">Updated - 12.1.2023</p>
+              </div>
             </div>
 
             <div class="miniNewsContainer mt-3 new">
-                <div class="imageContainer mt-5">
-                    <img src="../img/dismav.jpg">
-                </div>
-                <div class="textContainer mt-3">
-                    <h5>Thousands Of PC Games Discounted In Massive New Sale                    </h5>
-                    <p class="mt-4">Updated - 12.3.2022</p>
-                </div>
-
+              <div class="imageContainer mt-5">
+                <img src="../img/dismav.jpg" />
+              </div>
+              <div class="textContainer mt-3">
+                <h5>Thousands Of PC Games Discounted In Massive New Sale</h5>
+                <p class="mt-4">Updated - 12.3.2022</p>
+              </div>
             </div>
-
 
             <div class="miniNewsContainer mt-3 new">
-                <div class="imageContainer mt-5">
-                    <img src="../img/4085486-4069485-bestbuy.jpg">
-                </div>
-                <div class="textContainer mt-3">
-                    <h5>Best Buy Has Some Stellar Deals This Week                    </h5>
-                    <p class="mt-4">Updated - 12.3.2022</p>
-                </div>
-
+              <div class="imageContainer mt-5">
+                <img src="../img/4085486-4069485-bestbuy.jpg" />
+              </div>
+              <div class="textContainer mt-3">
+                <h5>Best Buy Has Some Stellar Deals This Week</h5>
+                <p class="mt-4">Updated - 12.3.2022</p>
+              </div>
             </div>
-
-        </div>
-        </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!----------------  END NEWS  -------------------------------------------------->
+
+    <!------------------   CONTACT US   ------------------------------------------------+-->
+
+    <div class="contactUs mt-5 pt-5">
+      <div class="h1 text-center">Contact Us</div>
+      <div class="contactContainer mt-1">
+        <img src="../img/map.jpg" />
+        <div class="contactBox mt-3 row">
+          <div class="leftBox col-md-6 col-12 px-0">
+            <img src="../img/map.jpg" width="100%" />
           </div>
-          <!----------------  END NEWS  -------------------------------------------------->
-
-
-          <!------------------   CONTACT US   ------------------------------------------------+-->
-
-            <div class="contactUs mt-5 pt-5">
-                <div class="h1 text-center">Contact Us</div>
-                <div class="contactContainer mt-1">
-                    <img src="../img/map.jpg">
-                    <div class="contactBox mt-3 row ">
-                        <div class="leftBox col-md-6 col-12 px-0">
-                          <img src="../img/map.jpg" width="100%">
-                        </div>
-                        <div class="rightBox col-md-5 col-12 ms-4 mt-3">
-                            <div class="inputBox text-start mt-4">
-                                <div class="h6">NAME</div>
-                                <input type="text">
-                            </div>
-                            <div class="inputBox text-start mt-4">
-                                <div class="h6">EMAIL</div>
-                                <input type="text">
-                            </div>
-                            <div class="msgBox mt-4">
-                                <div class="h6 mb-3">MESSAGE BOX</div>
-                                <textarea></textarea>
-                            </div>
-                            <div class="uploadBtn mt-4">
-                                <button class="btn mt-1 mb-4 text-light text-center fw-bold">Send</button>
-                            </div>
-                        
-                          
-                           
-                            
-                        </div>
-                    </div>
-                </div>
+          <div class="rightBox col-md-5 col-12 ms-4 mt-3">
+            <div class="inputBox text-start mt-4">
+              <div class="h6">NAME</div>
+              <input type="text" />
             </div>
+            <div class="inputBox text-start mt-4">
+              <div class="h6">EMAIL</div>
+              <input type="text" />
+            </div>
+            <div class="msgBox mt-4">
+              <div class="h6 mb-3">MESSAGE BOX</div>
+              <textarea></textarea>
+            </div>
+            <div class="uploadBtn mt-4">
+              <button class="btn mt-1 mb-4 text-light text-center fw-bold">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-           <!------------------   END CONTACT US   ------------------------------------------------+-->
-<!------------------------------   FOOTER   ---------------------------------------------->
+    <!------------------   END CONTACT US   ------------------------------------------------+-->
+    <!------------------------------   FOOTER   ---------------------------------------------->
 
-<div class="container-fluid footer pt-5">
-    <div class="row">
+    <div class="container-fluid footer pt-5">
+      <div class="row">
         <div class="col-md-4 col-6 offset-1 footerGameTitle">
-            <div class="h4 mb-5">Games</div>
-            <div class="p mb-3">Virtual Reality (VR)</div>
-            <div class="p mb-3">Play Station 4 (PS 4)</div>
-            <div class="p mb-3">PC Gaming</div>
-            <div class="p mb-3">Mobile Gaming</div>
+          <div class="h4 mb-5">Games</div>
+          <div class="p mb-3">Virtual Reality (VR)</div>
+          <div class="p mb-3">Play Station 4 (PS 4)</div>
+          <div class="p mb-3">PC Gaming</div>
+          <div class="p mb-3">Mobile Gaming</div>
         </div>
         <div class="col-md-3 col-4 footerPartnerTitle">
-            <div class="h4 mb-5">Partners</div>
-            <div class="p mb-3">Google</div>
-            <div class="p mb-3">Microsoft</div>
-            <div class="p mb-3">Meta</div>
-            <div class="p mb-3">Amazon</div>
+          <div class="h4 mb-5">Partners</div>
+          <div class="p mb-3">Google</div>
+          <div class="p mb-3">Microsoft</div>
+          <div class="p mb-3">Meta</div>
+          <div class="p mb-3">Amazon</div>
         </div>
-        <div class="col-md-4 col-sm-11 offset-md-0 offset-1 mt-md-0 mt-5 footerContactTitle">
-            <div class="h4 mb-5">Contact Info</div>
-            <div class="p mb-3">No.40, Hlaing Street</div>
-            <div class="p mb-3">Yangon, Myanmar</div>
-            <div class="p mb-3">+959232143342</div>
-            <div class="socialIcons mb-3">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram ms-3"></i>
-                <i class="fa-brands fa-twitter ms-3"></i>
-            </div>
+        <div
+          class="col-md-4 col-sm-11 offset-md-0 offset-1 mt-md-0 mt-5 footerContactTitle"
+        >
+          <div class="h4 mb-5">Contact Info</div>
+          <div class="p mb-3">No.40, Hlaing Street</div>
+          <div class="p mb-3">Yangon, Myanmar</div>
+          <div class="p mb-3">+959232143342</div>
+          <div class="socialIcons mb-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram ms-3"></i>
+            <i class="fa-brands fa-twitter ms-3"></i>
+          </div>
         </div>
+      </div>
+      <div class="line m-auto mt-5"></div>
+      <div class="p mt-1 pb-5 text-center designCrd">
+        CopyRight 2023 @Aung Kaung Moe
+      </div>
     </div>
-    <div class="line m-auto mt-5"></div>
-    <div class="p mt-1 pb-5 text-center designCrd">CopyRight 2023 @Aung Kaung Moe</div>
-</div>
 
-<!------------------------------   END FOOTER   ---------------------------------------------->
-</body>
+    <!------------------------------   END FOOTER   ---------------------------------------------->
+  </body>
 </html>
-
