@@ -34,7 +34,7 @@ const testiArray = [
   },
 ];
 $(document).ready(function () {
-  fetch("http://localhost:3001/gameDetails")
+  fetch("http://localhost:3000/gameProducts")
     .then((res) => res.json())
     .then((data) => {
       gamesArray = data;
@@ -44,14 +44,14 @@ $(document).ready(function () {
       filterItems("gridContainer", "gameTypeBtn");
     });
 
-  fetch("http://localhost:3001/gameBuyDetails")
+  fetch("http://localhost:3000/buyingGameDetails")
     .then((res) => res.json())
     .then((data) => {
       gameDisplayArray = data;
       getUserClickGame();
     });
 
-  fetch("http://localhost:3001/productDetails")
+  fetch("http://localhost:3000/productsDetails")
     .then((res) => res.json())
     .then((data) => {
       sellProductsArray = data;

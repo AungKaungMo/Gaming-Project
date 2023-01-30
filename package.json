@@ -1,0 +1,23 @@
+{
+  "name": "gaming-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "start": "json-server --watch ./project.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AungKaungMo/Gaming-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AungKaungMo/Gaming-Project/issues"
+  },
+  "homepage": "https://github.com/AungKaungMo/Gaming-Project#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

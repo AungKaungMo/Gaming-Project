@@ -1,0 +1,490 @@
+{
+  "gameProducts": [
+    {
+      "gameImage": "../img/godofwar.jpg",
+      "gameType": "ps4",
+      "gameName": "God Of War",
+      "popular": "3M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 50.3"
+    },
+    {
+      "gameImage": "../img/apexLegend.jpg",
+      "gameType": "pc",
+      "gameName": "Apex Legend",
+      "popular": "5M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 60.2"
+    },
+    {
+      "gameImage": "../img/Bloodborne.jpg",
+      "gameType": "ps4",
+      "gameName": "Blood Borne",
+      "popular": "3M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 90.3"
+    },
+    {
+      "gameImage": "../img/ClashRoyale.jpg",
+      "gameType": "mobile",
+      "gameName": "Clash Royale",
+      "popular": "11M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 20.22"
+    },
+    {
+      "gameImage": "../img/Cod.jpg",
+      "gameName": "Call Of Duty",
+      "gameType": "ps4",
+      "popular": "6M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 30.3"
+    },
+    {
+      "gameImage": "../img/fortnite.jpg",
+      "gameType": "pc",
+      "gameName": "Fortnite",
+      "popular": "12M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 150.3"
+    },
+    {
+      "gameImage": "../img/halfLife.jpg",
+      "gameType": "vr",
+      "gameName": "Half Life",
+      "popular": "7M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 30.21"
+    },
+    {
+      "gameImage": "../img/mineCraft.jpg",
+      "gameType": "vr",
+      "gameName": "Mine Craft",
+      "popular": "30M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 210.3"
+    },
+    {
+      "gameImage": "../img/ml.jpg",
+      "gameType": "mobile",
+      "gameName": "Mobile Legend",
+      "popular": "50M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 5.0"
+    },
+    {
+      "gameImage": "../img/noManSky.jpg",
+      "gameType": "vr",
+      "gameName": "No Man Sky",
+      "popular": "13M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 320.3"
+    },
+    {
+      "gameImage": "../img/PersonaRoyal.jpg",
+      "gameType": "ps4",
+      "gameName": "Person5 Royal",
+      "popular": "11M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 210.22"
+    },
+    {
+      "gameImage": "../img/pokemon.jpg",
+      "gameType": "mobile",
+      "gameName": "Pokemon Go",
+      "popular": "36M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 30.3"
+    },
+    {
+      "gameImage": "../img/RAIDShadowLegends.jpg",
+      "gameType": "mobile",
+      "gameName": "Raid Shadow",
+      "popular": "12M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 150.3"
+    },
+    {
+      "gameImage": "../img/RecRoom.png",
+      "gameType": "vr",
+      "gameName": "Rec Room",
+      "popular": "17M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 300.21"
+    },
+    {
+      "gameImage": "../img/TheWitcherWild Hunt.jpg",
+      "gameType": "ps4",
+      "gameName": "The Witcher",
+      "popular": "32M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 150.3"
+    },
+    {
+      "gameImage": "../img/valorant.jpg",
+      "gameType": "pc",
+      "gameName": "Valorant",
+      "popular": "71M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 600.21"
+    },
+    {
+      "gameImage": "../img/walkingDead.jpg",
+      "gameType": "mobile",
+      "gameName": "Walking Dead",
+      "popular": "30M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 210.3"
+    },
+    {
+      "gameImage": "../img/pubg.jpg",
+      "gameType": "mobile",
+      "gameName": "PUBG",
+      "popular": "50M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 5.0"
+    },
+    {
+      "gameImage": "../img/GTA.jpg",
+      "gameType": "pc",
+      "gameName": "GTA",
+      "popular": "12M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 100.11"
+    },
+    {
+      "gameImage": "../img/gshin.jpg",
+      "gameType": "pc",
+      "gameName": "Genshin",
+      "popular": "21M",
+      "gameDetails": "One of the best ranking game in 1023.",
+      "price": "$ 53.11"
+    }
+  ],
+
+  "buyingGameDetails": [
+    {
+      "img": "../img/godofwar.jpg",
+      "img1": "../img/gow1.jpg",
+      "img2": "../img/gow2.jpg",
+      "img3": "../img/gow3.jpg",
+      "name": "God Of War",
+      "price": "$ 50.3"
+    },
+    {
+      "img": "../img/apexLegend.jpg",
+      "img1": "../img/apl1.jpg",
+      "img2": "../img/apl2.jpg",
+      "img3": "../img/apl3.jpg",
+      "name": "Apex Legend",
+      "price": "$ 60.2"
+    },
+    {
+      "img": "../img/Bloodborne.jpg",
+      "img1": "../img/bb1.jpg",
+      "img2": "../img/bb2.jpg",
+      "img3": "../img/bb3.jpg",
+      "name": "Blood Borne",
+      "price": "$ 90.3"
+    },
+    {
+      "img": "../img/ClashRoyale.jpg",
+      "img1": "../img/cr1.jpg",
+      "img2": "../img/cr2.jpg",
+      "img3": "../img/cr3.jpg",
+      "name": "Clash Royale",
+      "price": "$ 20.22"
+    },
+    {
+      "img": "../img/Cod.jpg",
+      "img1": "../img/cod1.jpg",
+      "img2": "../img/cod2.jpeg",
+      "img3": "../img/cod3.jpg",
+      "name": "Call Of Duty",
+      "price": "$ 30.3"
+    },
+    {
+      "img": "../img/fortnite.jpg",
+      "img1": "../img/fortnite1.jpg",
+      "img2": "../img/fortnite2.jpg",
+      "img3": "../img/fortnite3.jpg",
+      "name": "Fortnite",
+      "price": "$ 150.3"
+    },
+    {
+      "img": "../img/halfLife.jpg",
+      "img1": "../img/HL1.jpg",
+      "img2": "../img/HL2.jpg",
+      "img3": "../img/HL3.jpg",
+      "name": "Half Life",
+      "price": "$ 30.21"
+    },
+    {
+      "img": "../img/mineCraft.jpg",
+      "img1": "../img/mc1.png",
+      "img2": "../img/mc2.jpg",
+      "img3": "../img/mc3.jpg",
+      "name": "Mine Craft",
+      "price": "$ 210.3"
+    },
+    {
+      "img": "../img/ml.jpg",
+      "img1": "../img/ml1.jpg",
+      "img2": "../img/ml2.jpg",
+      "img3": "../img/ml3.jpg",
+      "name": "Mobile Legend",
+      "price": "$ 5.0"
+    },
+    {
+      "img": "../img/noManSky.jpg",
+      "img1": "../img/nms1.jpg",
+      "img2": "../img/nms2.jpg",
+      "img3": "../img/nms3.jpg",
+      "name": "No Man Sky",
+      "price": "$ 320.3"
+    },
+    {
+      "img": "../img/PersonaRoyal.jpg",
+      "img1": "../img/per1.jpg",
+      "img2": "../img/per2.jpg",
+      "img3": "../img/per3.jpg",
+      "name": "Person5 Royal",
+      "price": "$ 210.22"
+    },
+    {
+      "img": "../img/pokemon.jpg",
+      "img1": "../img/pgo1.jpg",
+      "img2": "../img/pgo2.jpg",
+      "img3": "../img/pgo3.jpg",
+      "name": "Pokemon Go",
+      "price": "$ 30.3"
+    },
+    {
+      "img": "../img/RAIDShadowLegends.jpg",
+      "img1": "../img/rs1.jpg",
+      "img2": "../img/rs2.jpg",
+      "img3": "../img/rs3.jpg",
+      "name": "Raid Shadow",
+      "price": "$ 150.3"
+    },
+    {
+      "img": "../img/RecRoom.png",
+      "img1": "../img/rr1.jpg",
+      "img2": "../img/rr2.jpg",
+      "img3": "../img/rr3.jpg",
+      "name": "Rec Room",
+      "price": "$ 600.21"
+    },
+    {
+      "img": "../img/TheWitcherWild Hunt.jpg",
+      "img1": "../img/tw1.jpg",
+      "img2": "../img/tw2.jpg",
+      "img3": "../img/tw3.jpg",
+      "name": "The Witcher",
+      "price": "$ 150.3"
+    },
+    {
+      "img": "../img/valorant.jpg",
+      "img1": "../img/val1.jpg",
+      "img2": "../img/val2.jpg",
+      "img3": "../img/val3.jpg",
+      "name": "Valorant",
+      "price": "$ 600.21"
+    },
+    {
+      "img": "../img/walkingDead.jpg",
+      "img1": "../img/wd1.jpg",
+      "img2": "../img/wd2.jpg",
+      "img3": "../img/wd3.jpg",
+      "name": "Walking Dead",
+      "price": "$ 210.3"
+    },
+    {
+      "img": "../img/pubg.jpg",
+      "img1": "../img/pubg1.jpg",
+      "img2": "../img/pubg2.jpg",
+      "img3": "../img/pubg3.jpg",
+      "name": "PUBG",
+      "price": "$ 5.0"
+    },
+    {
+      "img": "../img/GTA.jpg",
+      "img1": "../img/gta1.jpg",
+      "img2": "../img/gta2.jpg",
+      "img3": "../img/gta3.jpg",
+      "name": "GTA",
+      "price": "$ 100.11"
+    },
+    {
+      "img": "../img/gshin.jpg",
+      "img1": "../img/gshin1.jpeg",
+      "img2": "../img/gshin2.jpg",
+      "img3": "../img/gshin3.jpg",
+      "name": "Genshin",
+      "price": "$ 53.11"
+    }
+  ],
+
+  "productsDetails": [
+    {
+      "gameImage": "../img/1colorKey.png",
+      "gameType": "keyboard",
+      "gameName": "One Color Key",
+      "popular": "3M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 50.3"
+    },
+    {
+      "gameImage": "../img/chairBlackBlue.png",
+      "gameType": "chair",
+      "gameName": "Chair(Black&Blue)",
+      "popular": "5M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 60.2"
+    },
+    {
+      "gameImage": "../img/headset(HDJ-1500).png",
+      "gameType": "headset",
+      "gameName": "HDJ (1500)",
+      "popular": "3M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 90.3"
+    },
+    {
+      "gameImage": "../img/headset(SADES).png",
+      "gameType": "headset",
+      "gameName": "SADES",
+      "popular": "11M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 20.22"
+    },
+    {
+      "gameImage": "../img/VR(mi).png",
+      "gameName": "VR(Mi)",
+      "gameType": "psvr",
+      "popular": "6M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 30.3"
+    },
+    {
+      "gameImage": "../img/2colorKey.png",
+      "gameType": "keyboard",
+      "gameName": "Two Color Key",
+      "popular": "12M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 150.3"
+    },
+    {
+      "gameImage": "../img/chair.png",
+      "gameType": "chair",
+      "gameName": "DXR Acer",
+      "popular": "7M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 30.21"
+    },
+    {
+      "gameImage": "../img/headset(Studio).png",
+      "gameType": "headset",
+      "gameName": "Studio",
+      "popular": "30M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 210.3"
+    },
+    {
+      "gameImage": "../img/6colorKey.png",
+      "gameType": "keyboard",
+      "gameName": "6 Color Key",
+      "popular": "50M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 5.0"
+    },
+    {
+      "gameImage": "../img/chairPink.png",
+      "gameType": "chair",
+      "gameName": "Chair(Pink)",
+      "popular": "13M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 320.3"
+    },
+    {
+      "gameImage": "../img/ps4.png",
+      "gameType": "psvr",
+      "gameName": "PS 4",
+      "popular": "11M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 210.22"
+    },
+    {
+      "gameImage": "../img/4colorKey.png",
+      "gameType": "keyboard",
+      "gameName": "4 Color Key",
+      "popular": "36M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 30.3"
+    },
+    {
+      "gameImage": "../img/headset(S.O.G).png",
+      "gameType": "headset",
+      "gameName": "S.O.G",
+      "popular": "12M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 150.3"
+    },
+    {
+      "gameImage": "../img/ps5.png",
+      "gameType": "psvr",
+      "gameName": "PS 5",
+      "popular": "17M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 300.21"
+    },
+    {
+      "gameImage": "../img/chairBlue.png",
+      "gameType": "chair",
+      "gameName": "Chair(Blue)",
+      "popular": "32M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 150.3"
+    },
+    {
+      "gameImage": "../img/5colorKey.png",
+      "gameType": "keyboard",
+      "gameName": "5 Color Key",
+      "popular": "71M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 600.21"
+    },
+    {
+      "gameImage": "../img/VR(V+).png",
+      "gameType": "psvr",
+      "gameName": "VR(V+)",
+      "popular": "30M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 210.3"
+    },
+    {
+      "gameImage": "../img/chairBlackWhite.png",
+      "gameType": "chair",
+      "gameName": "Chair(Black&White)",
+      "popular": "50M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 5.0"
+    },
+    {
+      "gameImage": "../img/headset(L).png",
+      "gameType": "headset",
+      "gameName": "L",
+      "popular": "12M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 100.11"
+    },
+    {
+      "gameImage": "../img/3colorKey.png",
+      "gameType": "keyboard",
+      "gameName": "3 Color Key",
+      "popular": "21M",
+      "gameDetails": "One of the best sell products in 1023.",
+      "price": "$ 53.11"
+    }
+  ]
+}
