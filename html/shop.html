@@ -71,10 +71,11 @@
             <div
               class="favListCount clickFavList"
               data-bs-toggle="offcanvas"
+              id="favouriteCount"
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
             >
-              13
+              0
             </div>
           </div>
           <div class="shopList">
@@ -86,11 +87,12 @@
             ></i>
             <div
               class="shopListCount clickShopList"
+              id="boughtCount"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight2"
               aria-controls="offcanvasRight"
             >
-              3
+              0
             </div>
           </div>
         </div>
@@ -114,7 +116,7 @@
     </div>
 
     <div
-      class="offcanvas offcanvas-end listBox2"
+      class="offcanvas offcanvas-end boughtBox"
       tabindex="-1"
       id="offcanvasRight2"
       aria-labelledby="offcanvasRightLabel"
@@ -368,7 +370,7 @@
             </div>
             <div class="modal-footer buyBtnModal m-auto mb-3">
               <button
-                class="btn btn-primary"
+                class="btn btn-primary addingBoughtList"
                 data-bs-target="#exampleModalToggle2"
               >
                 Buy

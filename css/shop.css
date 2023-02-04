@@ -19,7 +19,7 @@
   }
 }
 .listBox,
-.listBox2 {
+.boughtBox {
   background-color: var(--navBgAndBoxes);
   overflow: auto;
 }
